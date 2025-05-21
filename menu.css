@@ -1,0 +1,119 @@
+body{ background: radial-gradient(circle, #3498db 10%, transparent 20%),
+    radial-gradient(circle, transparent 10%, #3498db 20%);
+  background-size: 30px 30px; /* Adjust the size of the pattern */
+  animation: moveBackground 8s linear infinite; /* Adjust the animation duration and timing function */
+}
+
+.container{width: 100%;
+    height: 100%;
+    background: lightblue;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .container::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, #3498db 10%, transparent 20%),
+      radial-gradient(circle, transparent 10%, #3498db 20%);
+    background-size: 30px 30px; /* Adjust the size of the pattern */
+    animation: moveBackground 8s linear infinite; /* Adjust the animation duration and timing function */
+  }
+  
+
+
+  
+  
+  .navbar li{
+    float:left;
+    text-align: center;
+    font-size: 22px;
+}
+
+
+
+#brand {
+    font-family: 'choko';
+    font-size: 38px;
+    color:rgb(10, 99, 233) ;
+    mix-blend-mode: multiply;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 17px;
+}
+
+.navbar-brand{
+    font-size: 2rem;
+ align-self: center;
+ justify-self: end;
+ justify-content: center;
+}
+.dropdown-item{
+    font-family: 'choko';
+    font-size: 1.3rem;
+    color:rgb(10, 99, 233) ;
+
+}
+
+h1{
+    font-family: 'choko';
+    font-size: 5rem;
+    color:rgb(10, 99, 233) ;
+    text-align: center;
+}
+h2{
+    font-family: 'choko';
+    font-size: 2.5rem;
+    color:rgb(10, 99, 233) ;
+    text-align: center;
+}
+
+
+h3{
+    font-family: 'choko';
+    font-size: 3rem;
+    color:rgb(10, 99, 233) ;
+    text-align: center;
+}
+.card-img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 45%;
+    height: 30%;
+}
+.card-img-overlay{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    height: 80%;   
+}
+
+h5{
+    font-family: 'choko';
+    font-size: 2.5rem;
+    color:rgb(10, 99, 233) ;
+
+}
+p{
+    font-family: 'choko';
+    font-size: 2rem;
+    color:rgb(10, 99, 233) ;
+}
+
+   
+.columns{
+   
+    margin-right: 5rem auto;
+	width: min(85%, 70rem);
+	display: grid;
+	grid-template-columns: 33% 33% 33% 33%;
+}
+
+

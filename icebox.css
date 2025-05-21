@@ -1,0 +1,141 @@
+
+body{
+    background: #7F7FD5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    
+}
+
+#brand {
+    font-family: 'choko';
+    font-size: 2rem;
+    color:rgb(10, 99, 233) ;
+    mix-blend-mode: multiply;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar-brand{
+    font-size: 2rem;
+ align-self: center;
+ justify-self: end;
+ justify-content: center;
+}
+.dropdown-item{
+    font-family: 'choko';
+    font-size: 1.3rem;
+    color:rgb(10, 99, 233) ;
+}
+
+h1{
+    font-family: 'choko';
+    font-size: 5rem;
+    color:rgb(10, 99, 233) ;
+    text-align: center;
+}
+h2{
+    font-family: 'choko';
+    font-size: 2.5rem;
+    color:rgb(10, 99, 233) ;
+    text-align: center;
+}
+
+
+h3{
+    font-family: 'choko';
+    font-size: 3rem;
+    color:rgb(10, 99, 233) ;
+    text-align: center;
+}
+.card-img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 45%;
+    height: 30%;
+}
+.card-img-overlay{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    height: 80%;   
+}
+
+h5{
+    font-family: 'choko';
+    font-size: 2.5rem;
+    color:rgb(10, 99, 233) ;
+
+}
+p{
+    font-family: 'choko';
+    font-size: 2rem;
+    color:rgb(10, 99, 233) ;
+}
+/* From Uiverse.io by cssbuttons-io */ 
+
+ #button{
+    --glow-color: rgb(217, 176, 255);
+    --glow-spread-color: rgba(191, 123, 255, 0.781);
+    --enhanced-glow-color: rgb(231, 206, 255);
+    --btn-color: rgb(100, 61, 136);
+    border: .20em solid var(--glow-color);
+    padding: .5em 2.5em;
+    color: var(--glow-color);
+    font-size: 15px;
+    font-weight: bold;
+    background-color: var(--btn-color);
+    border-radius: 1em;
+    outline: none;
+    box-shadow: 0 0 1em .25em var(--glow-color),
+           0 0 4em 1em var(--glow-spread-color),
+           inset 0 0 .75em .25em var(--glow-color);
+    text-shadow: 0 0 .5em var(--glow-color);
+    position: relative;
+    transition: all 0.3s;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ }
+
+   
+   button::after {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--glow-spread-color);
+    filter: blur(2em);
+    opacity: .7;
+    transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+   }
+   
+   button:hover {
+    color: var(--btn-color);
+    background-color: var(--glow-color);
+    box-shadow: 0 0 1em .25em var(--glow-color),
+           0 0 4em 2em var(--glow-spread-color),
+           inset 0 0 .75em .25em var(--glow-color);
+   }
+   
+   button:active {
+    box-shadow: 0 0 0.6em .25em var(--glow-color),
+           0 0 2.5em 2em var(--glow-spread-color),
+           inset 0 0 .5em .25em var(--glow-color);
+   }
+   
+.columns{
+   
+    margin-right: 5rem auto;
+	width: min(85%, 70rem);
+	display: grid;
+	grid-template-columns: 33% 33% 33% 33%;
+}
+
+
