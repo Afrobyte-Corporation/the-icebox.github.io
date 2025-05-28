@@ -17,6 +17,11 @@ body{
     margin-right: auto;
 }
 
+.ranchers-regular {
+  font-family: "Ranchers", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 .navbar-brand{
     font-size: 2rem;
  align-self: center;
