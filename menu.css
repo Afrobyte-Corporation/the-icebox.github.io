@@ -34,18 +34,15 @@ body{ background: radial-gradient(circle, #3498db 10%, transparent 20%),
     font-size: 22px;
 }
 
-
-
 #brand {
-    font-family: 'choko';
-    font-size: 38px;
+    font-family: "Knewave",system-ui;
+    font-size: 2rem;
     color:rgb(10, 99, 233) ;
-    mix-blend-mode: multiply;
+    background-blend-mode: multiply;
     display: block;
     margin-left: auto;
-    margin-right: auto;
-    padding: 17px;
-}
+    margin-right: auto;}
+
 
 .navbar-brand{
     font-size: 2rem;
@@ -53,6 +50,12 @@ body{ background: radial-gradient(circle, #3498db 10%, transparent 20%),
  justify-self: end;
  justify-content: center;
 }
+.ranchers-regular {
+  font-family: "Ranchers", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .dropdown-item{
     font-family: 'choko';
     font-size: 1.3rem;
