@@ -63,14 +63,35 @@ body{ background: radial-gradient(circle, #3498db 10%, transparent 20%),
 
 }
 
+#brand {
+    font-family: "Knewave",system-ui;
+    font-size: 2rem;
+    color:rgb(10, 99, 233) ;
+    background-blend-mode: multiply;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;}
+
+
+.navbar-brand{
+    font-size: 2rem;
+ align-self: center;
+ justify-self: end;
+ justify-content: center;
+}
+.ranchers-regular {
+  font-family: "Ranchers", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
 h1{
-    font-family: 'choko';
+    font-family: "Ranchers", system-ui;    
     font-size: 5rem;
     color:rgb(10, 99, 233) ;
     text-align: center;
 }
 h2{
-    font-family: 'choko';
+    font-family: "Ranchers", system-ui;
     font-size: 2.5rem;
     color:rgb(10, 99, 233) ;
     text-align: center;
@@ -78,7 +99,7 @@ h2{
 
 
 h3{
-    font-family: 'choko';
+    font-family: "Ranchers", system-ui;
     font-size: 3rem;
     color:rgb(10, 99, 233) ;
     text-align: center;
@@ -99,13 +120,13 @@ h3{
 }
 
 h5{
-    font-family: 'choko';
+    font-family: "Ranchers", system-ui;
     font-size: 2.5rem;
     color:rgb(10, 99, 233) ;
 
 }
 p{
-    font-family: 'choko';
+    font-family: "Ranchers", system-ui;
     font-size: 2rem;
     color:rgb(10, 99, 233) ;
 }
