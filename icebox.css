@@ -33,7 +33,11 @@ body{
     font-size: 1.3rem;
     color:rgb(10, 99, 233) ;
 }
-
+.knewave-regular {
+  font-family: "Knewave", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
 h1{
     font-family: "Rancher",system-ui;
     font-size: 5rem;
