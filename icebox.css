@@ -8,7 +8,7 @@ body{
 }
 
 #brand {
-    font-family: "Rancher", system-ui;
+    font-family: "Ranchers", system-ui;
     font-size: 2rem;
     color:rgb(10, 99, 233) ;
     mix-blend-mode: multiply;
@@ -29,19 +29,19 @@ body{
  justify-content: center;
 }
 .dropdown-item{
-    font-family: "Rancher",system-ui;
+    font-family: "Ranchers",system-ui;
     font-size: 1.3rem;
     color:rgb(10, 99, 233) ;
 }
 }
 h1{
-    font-family: "Rancher",system-ui;
+    font-family: "Ranchers",system-ui;
     font-size: 5rem;
     color:rgb(10, 99, 233) ;
     text-align: center;
 }
 h2{
-    font-family: "Rancher",system,ui;
+    font-family: "Ranchers",system,ui;
     font-size: 2.5rem;
     color:rgb(10, 99, 233) ;
     text-align: center;
@@ -49,7 +49,7 @@ h2{
 
 
 h3{
-    font-family: "Rancher",system-ui;
+    font-family: "Ranchers",system-ui;
     font-size: 3rem;
     color:rgb(10, 99, 233) ;
     text-align: center;
@@ -70,13 +70,13 @@ h3{
 }
 
 h5{
-    font-family: "Rancher",system-ui;
+    font-family: "Ranchers",system-ui;
     font-size: 2.5rem;
     color:rgb(10, 99, 233) ;
 
 }
 p{
-    font-family: "Rancher",system-ui;
+    font-family: "Ranchers",system-ui;
     font-size: 2rem;
     color:rgb(10, 99, 233) ;
 }
