@@ -31,6 +31,14 @@ background: linear-gradient(to right, #3B4371, #F3904F); /* W3C, IE 10+/ Edge, F
     color:rgb(10, 99, 233) ;
 
 }
+.columns{
+   
+    margin-right: 5rem auto;
+	width: min(85%, 70rem);
+	display: grid;
+	grid-template-columns: 33% 33% 33%;
+}
+
 .knewave-regular {
   font-family: "Knewave", system-ui;
   font-weight: 400;
