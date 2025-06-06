@@ -5,7 +5,8 @@ background: linear-gradient(to right, #3B4371, #F3904F); /* W3C, IE 10+/ Edge, F
   }
   
 #brand {
-    background-blend-mode: multiply;
+    mix-blend-mode: multiply;
+   font-size: 2rem;
     display: block;
     margin-left: auto;
     margin-right: auto;}
