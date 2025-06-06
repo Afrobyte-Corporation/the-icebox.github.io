@@ -37,9 +37,9 @@ mix-blend-mode: multiply;
 .columns{
    
     margin-right: 75rem auto;
-	width: min(95%, 80rem);
+	width: min(100%, 90rem);
 	display: grid;
-	grid-template-columns: 35% 35% 35%;
+	grid-template-columns: 45% 45% 45%;
 }
 
 .knewave-regular {
