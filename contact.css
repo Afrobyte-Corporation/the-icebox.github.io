@@ -40,7 +40,7 @@ mix-blend-mode: multiply;
     margin-left:0.5rem auto;
     width: min(100%, 100rem);
     display: grid;
-    grid-template-columns: 45% 45% 45%;
+    grid-template-columns: 20em 100px 50%;
 }
 
 .knewave-regular {
