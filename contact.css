@@ -36,10 +36,11 @@ mix-blend-mode: multiply;
 }
 .columns{
    
-    margin-right: 75rem auto;
-	width: min(100%, 90rem);
-	display: grid;
-	grid-template-columns: 45% 45% 45%;
+    margin-right: 0.5rem auto;
+    margin-left:0.5rem auto;
+    width: min(100%, 100rem);
+    display: grid;
+    grid-template-columns: 45% 45% 45%;
 }
 
 .knewave-regular {
