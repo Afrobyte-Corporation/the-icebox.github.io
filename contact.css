@@ -71,16 +71,17 @@ p{
     margin-right: auto;
     width: 60rem;
     height: 60rem;
-	 align-self: center;
- justify-self: end;
- justify-content: center;}
+}
 
 .card-img-overlay{
     display: block;
-    margin-left: auto;
-    margin-right: auto;
     width: auto;
     height: auto;
 	 align-self: center;
  justify-self: end;
  justify-content: center;}
+
+.logo-group{
+	margin-left: auto;
+    margin-right: auto;
+justify-content: left;}
