@@ -11,7 +11,6 @@ background: linear-gradient(to right, #3B4371, #F3904F); /* W3C, IE 10+/ Edge, F
    display: block;
    margin-left: auto;
    margin-right: auto;
-   padding: 2000px;
 }
 
 
@@ -23,8 +22,6 @@ background: linear-gradient(to right, #3B4371, #F3904F); /* W3C, IE 10+/ Edge, F
  justify-self: end;
  justify-content: center;
 mix-blend-mode: multiply;
-padding: 1000px;
-width:100%;
 }
 .ranchers-regular {
   font-family: "Ranchers", system-ui;	
@@ -39,12 +36,12 @@ width:100%;
 }
 .columns{
    
-    margin-right: 0.5rem auto;
-    margin-left:0.5rem auto;
+    margin-right: 0 auto;
+    margin-left:0 auto;
     width: min(95%, 95rem);
     display: grid;
-    grid-template-columns: 50em 200px 80%;
-    padding:2000px;
+    grid-template-columns: 45% 45% 45%;
+	
 	
 }
 
@@ -74,8 +71,7 @@ p{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 40%;
-    height: 40%;
+    width: 60%;
 }
 
 .card-img-overlay{
@@ -84,26 +80,29 @@ p{
     height: 50%;
 	 align-self: center;
  justify-self: end;
- justify-content: center;}
+ justify-content: center;
+}
 
 .logo-group{
 	margin-left: auto;
     margin-right: auto;
 justify-content: left;}
 
-@media (max-width:600px){
-	.card-img{
-    width: 100%;
-    	}
-	.card-img overlay{
-		 width: 100%;
-    	}
-	.navbar-brand{
+.wrapper-main{
+	width:1000px;
+	padding:100px 0;
+	margin:0 auto;
+}
+
+@media only screen and (max-width:768px) and (orientation: landscape){
+	.wrapper-main{
 		width:100%;
 }
 }
 
 
-@media (min-width:600px){
-	
+@media only screen and(min-width:992px) and (orientation: portrait){
+	.wrapper-main{
+		width:100%;	
+}
 }
