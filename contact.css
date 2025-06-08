@@ -39,7 +39,7 @@ mix-blend-mode: multiply;
     margin-right: 50rem auto;
     margin-left:50rem auto;
     width: min(95%, 95rem);
-    display: grid;
+    display: flex;
     grid-template-columns: 45% 45% 45%;
 	
 	
