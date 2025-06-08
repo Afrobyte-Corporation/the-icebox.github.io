@@ -36,7 +36,7 @@ mix-blend-mode: multiply;
 }
 .columns{
    
-    margin-right: 0 auto;
+    margin-right: 10rem auto;
     margin-left:0 auto;
     width: min(95%, 95rem);
     display: grid;
