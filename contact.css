@@ -38,7 +38,7 @@ mix-blend-mode: multiply;
    
     margin-right: 0.5rem auto;
     margin-left:0.5rem auto;
-    width: min(100%, 100rem);
+    width: min(95%, 95rem);
     display: grid;
     grid-template-columns: 50em 200px 80%;
 }
