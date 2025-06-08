@@ -98,12 +98,16 @@ justify-content: left;}
 @media only screen and (max-width:768px) and (orientation: landscape){
 	.wrapper-main{
 		width:100%;
-}
+		background: #F3904F;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #3B4371, #F3904F);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #3B4371, #F3904F);}
 }
 
 
 @media only screen and(min-width:992px) and (orientation: portrait){
 	.wrapper-main{
-		width:100%;	
-}
+		width:100%;
+		background: #F3904F;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #3B4371, #F3904F);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #3B4371, #F3904F);}
 }
