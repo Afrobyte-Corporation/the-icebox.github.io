@@ -14,59 +14,68 @@
 </head>
 <body>
     <div class= "wrapper-main">
-    <nav class="navbar navbar-expand-sm">
-        <div class="container-flex">
-            <nav class="navbar ">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="index.html" id="brand">
-                    <img src="icebox.jpg" alt="Logo" width="200" height="200" class="d-inline-block align-text-center ">
-                    </a>
-                </div>
-              
-              
+    
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class= "nav-link" href="index.html" id="brand">Home</a>
+<nav class="navbar bg-dark fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">
+        <img src="icebox.jpg"alt="Logo" width="200" height="200" class="d-inline-block align-text-center ">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">The Icebox Frozen Treats</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pick-up</a>
+          </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">Catering</a>
+          </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">Door Dash</a>
+          </li>
+
+            <li class="nav-item">
+            <a class="nav-link" href="#">Uber Eats</a>
+          </li>            
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Menu
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Water Ice</a></li>
+              <li><a class="dropdown-item" href="#">Ice Cream</a></li>
+
+                <li><a class="dropdown-item" href="#">Hot food</a></li>                
+              <li>
+                <hr class="dropdown-divider">
               </li>
-              
-              <li class="nav-item">
-                <a class= "nav-link" href="Locations.html" id="brand">Locations</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="brand">
-                  Menu
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="waterice.html">Water Ice</a></li>
-                  <li><a class="dropdown-item" href="Ice cream.html">Ice cream</a></li>
-                 <li><a class="dropdown-item"href="Milkshakes.html">Milkshakes</a></li>
-                 <li><a class="dropdown-item"href="Gelati.html">Gelati(s)</a></li>
-                 <li class="nav-item">
-                    <a class="dropdown-item" href="Hot food.html">Hot Food</a>
-                  </li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="candy.html">More Desserts</a></li>
-                </ul>
-              </li> <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="brand">
-                  Order Now
-                </a></li>
-              <ul class="dropdown-menu">
-                <a class="dropdown-item" href="#" id="brand">Pick Up</a>
-              
-              <li class="nav-item">
-                <a class="nav-link" href="" id="brand">Catering</a>
-              </li>
-              
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html" id="brand">Contact</a>
-              </li>
-          </ul></ul>
-         </nav>
-          </div>
-        </div>
+              <li><a class="dropdown-item" href="#">Gelati(s)</a></li>
+             <li><a class="dropdown-item" href="#">More Desserts</a>
+             </li>               
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+
+    
       
       
     <br><br><br>
