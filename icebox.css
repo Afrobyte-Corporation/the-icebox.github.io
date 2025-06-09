@@ -149,7 +149,7 @@ p{
 .columns{
    
     margin-right: 5rem auto;
-	width: min(25%, 60rem);
+	width: min(100%, 60rem);
 	display: grid;
 	grid-template-columns: 33% 33% 33% 33%;
 }
