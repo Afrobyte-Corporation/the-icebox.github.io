@@ -35,6 +35,7 @@ background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+
  justify-self: end;
  justify-content: center;
 mix-blend-mode: multiply;
+background-blend-mode: multiply;
  }
 .dropdown-item{
     font-family: "Ranchers",system-ui;
