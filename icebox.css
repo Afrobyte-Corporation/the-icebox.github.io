@@ -42,6 +42,9 @@ background-blend-mode: multiply;
     font-size: 1.3rem;
     color:rgb(10, 99, 233) ;
 }
+img[alt="Logo"][src="icebox.jpg"]{
+	mix-blend-mode: multiply;
+}
 
 h1{
     font-family: "Ranchers",system-ui;
