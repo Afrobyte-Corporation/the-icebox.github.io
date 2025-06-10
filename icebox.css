@@ -151,6 +151,7 @@ p{
     margin-right: 5rem auto;
 	width: min(100%, 60rem);
 	display: grid;
+	gap: 5px;
 	grid-template-columns: 33% 33% 33% 33%;
 }
 
