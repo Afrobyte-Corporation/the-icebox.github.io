@@ -12,7 +12,7 @@ background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+
    background-size: 40rem;
     display: inline-block;
     margin-right: auto;
-   backdrop-filter: invert(80%);
+   backdrop-filter: invert(8%);
 }
 
 
