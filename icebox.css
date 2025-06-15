@@ -155,11 +155,12 @@ p{
    
     margin-right: auto;
     margin-left: auto;
-	width: min(80%, 50rem);
+	width: min(80%, 70rem);
 	display: grid;
-	gap: 3.5px;
-	grid-template-columns: 33% 33%;
-	grid-template-rows: 33% 33%;
+    grid-template-columns: 5em 100px 30%;
+    grid-template-rows: 200px auto;
+    gap: 10px;
+    padding:7px;
 }
 
 
