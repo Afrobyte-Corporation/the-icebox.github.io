@@ -8,16 +8,13 @@ background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+
 }
 
 .navbar-brand {
-   font-family: "Ranchers",system-ui;
-    font-size: 3.2rem;
-    color:rgb(10, 99, 233) ;
-    display: block;
+   background-image: url(icebox.jpg);
+   background-size: 60rem;
+    display: inline-block;
     margin-right: auto;
-   
+   backdrop-filter: invert(80%);
 }
-.blend{
-    mix-blend-mode: multiply;
-}
+
 
 
 .ranchers-regular {
@@ -170,14 +167,11 @@ p{
   max-width: 70rem;
 }
 
-select {
-  min-width: unset;
-    
-}
+
 
 
 .wrapper-main{
-	width:1200px;
+	width:1000px;
 	padding:100px 0;
 	margin:0 auto;
 	border:4px black;
@@ -185,8 +179,8 @@ select {
 
 
 
-}
-@media only screen and (max-width:600px) and (min-width:992px)(orientation:portrait){
+
+@media only screen and (max-width:600px) and (min-width:992px)and(orientation:portrait){
 	.wrapper-main{
 		width:100%;
 		background: #7F7FD5;  /* fallback for old browsers */
@@ -196,7 +190,7 @@ background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);		}
 
 
 
-@media only screen and(min-width:1200px) and (orientation:landscape;) {
+@media only screen and(min-width:1200px) and (orientation:landscape) {
 	.wrapper-main{
 		width:100%;
 		background: #7F7FD5;  /* fallback for old browsers */
