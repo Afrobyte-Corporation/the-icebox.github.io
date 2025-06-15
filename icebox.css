@@ -151,7 +151,7 @@ p{
            inset 0 0 .5em .25em var(--glow-color);
    }
    
-.columns{
+.container{
    
     margin-right: auto;
     margin-left: auto;
