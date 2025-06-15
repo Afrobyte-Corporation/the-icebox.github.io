@@ -156,8 +156,8 @@ p{
     margin-right: auto;
     margin-left: auto;
   display: grid;
-  grid-template-columns: repeat(auto-fill, 200px);
-  gap: 10px;
+  grid-template-columns: inherit;
+  gap: 5px;
   padding: 1em;
   max-width: 70rem;
 }
@@ -175,10 +175,7 @@ select {
 	border:4px black;
 }
 
-.device > .app,
-.app > * {
-    display: grid;
-    grid: subgrid / subgrid;
+
 
 }
 @media only screen and (max-width:600px) and (min-width:601px)(orientation:portrait){
