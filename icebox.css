@@ -196,9 +196,5 @@ background-repeat: no-repeat;}
 @media only screen and(min-width:768px) and (orientation:landscape) {
 	.wrapper-main{
 		width:100%;
-		background: #7F7FD5;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);	
-background-repeat: no-repeat;}
-}
+    }}
 
