@@ -162,7 +162,7 @@ p{
     margin-right: auto;
     margin-left: auto;
   display: grid;
-  grid-template-columns: 38% 38%;
+  grid-template-columns: 38% 38% auto;
   gap: 60px;
   padding: 3em;
   width: min(70%,60rem);
