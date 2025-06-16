@@ -165,7 +165,7 @@ p{
   grid-template-columns: 38% 38%;
   gap: 100px;
   padding: 5em;
-  width: min(80%,60em);
+  width: min(70%,60em);
 }
 
 
