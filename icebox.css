@@ -9,7 +9,7 @@ background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+
 
 .navbar-brand{
     margin-right: auto;
-    
+
 }
 
 
@@ -159,7 +159,7 @@ p{
     margin-left: auto;
   display: grid;
   grid-template-columns: repeat(2, var(--var col));
-  grid-template-rows: min-content;
+  grid-template-rows: 200px 0;
   gap: 5px;
   padding: 1em;
   max-width: 30rem;
