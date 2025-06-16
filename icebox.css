@@ -155,7 +155,7 @@ p{
     margin-right: auto;
     margin-left: auto;
   display: grid;
-  grid-template-columns: inherit;
+  grid-template-columns: repeat(2, var(--var col));
   gap: 5px;
   padding: 1em;
   max-width: 70rem;
