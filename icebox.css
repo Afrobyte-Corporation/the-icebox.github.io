@@ -163,9 +163,9 @@ p{
     margin-left: auto;
   display: grid;
   grid-template-columns: 38% 38%;
-  gap: 100px;
-  padding: 5em;
-  width: min(70%,60em);
+  gap: 60px;
+  padding: 3em;
+  width: min(70%,60rem);
 }
 
 
