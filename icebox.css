@@ -156,9 +156,10 @@ p{
     margin-left: auto;
   display: grid;
   grid-template-columns: repeat(2, var(--var col));
+  grid-template-rows: min-content;
   gap: 5px;
   padding: 1em;
-  max-width: 70rem;
+  max-width: 30rem;
 }
 
 
