@@ -159,10 +159,10 @@ p{
    
 .container{
    
-    margin-right: 5em auto;
-    margin-left: 5em auto;
+    margin-right: auto;
+    margin-left: auto;
   display: grid;
-  grid-template-columns: 35% 35% ;
+  grid-template-columns: 33% 33% ;
   grid-template-areas: "header" "main" "left-sidebar" "right-sidebar" "footer";
 
   gap: 1rem;
