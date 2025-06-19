@@ -233,8 +233,8 @@ background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
     margin-right: auto;
     margin-left: auto;
   display: grid;
-  grid-template-columns: auto ;
-  gap: 5px;
+  grid-template-columns: 35% 35%;
+  gap: 2px;
   padding: 1rem;
   width: min(70%,60rem);
 }
