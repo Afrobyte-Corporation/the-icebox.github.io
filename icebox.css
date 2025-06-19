@@ -4,7 +4,7 @@ body{
 background: #7F7FD5;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-width: 1000px;
+width: 100%;
 border: black;
 }
 
@@ -181,24 +181,53 @@ p{
 
 
 
-@media (min-width:600px) {
+@media only screen and (max-width:600px)and(orientation:portrait) {
 	.wrapper-main{
 		width:100%;
 		}
         .container{
    
-    margin-right: 5em auto;
-    margin-left: 5em auto;
+    margin-right: auto;
+    margin-left: auto;
   display: grid;
-  grid-template-columns:12rem auto 12rem ;
-  grid-template-areas: "header" "main" "left-sidebar" "right-sidebar" "footer";
-
-  gap: 1rem;
+  grid-template-columns: auto ;
+  gap: 5px;
   padding: 1rem;
   width: min(70%,60rem);
 }
 }
 
+@media only screen and (min-width:601px)and(orientation:portrait) {
+	.wrapper-main{
+		width:100%;
+		}
+        .container{
+   
+    margin-right: auto;
+    margin-left: auto;
+  display: grid;
+  grid-template-columns: auto ;
+  gap: 5px;
+  padding: 1rem;
+  width: min(70%,60rem);
+}
+}
+
+@media only screen and (min-width:768px)and(orientation:landscape) {
+	.wrapper-main{
+		width:100%;
+		}
+        .container{
+   
+    margin-right: auto;
+    margin-left: auto;
+  display: grid;
+  grid-template-columns: auto ;
+  gap: 5px;
+  padding: 1rem;
+  width: min(70%,60rem);
+}
+}
 
 
 
