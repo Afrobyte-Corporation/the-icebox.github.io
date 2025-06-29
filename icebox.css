@@ -160,9 +160,8 @@ p{
     margin-right: auto;
     margin-left: auto;
   display: grid;
-  grid-template-columns: 150px ;
-  grid-auto-columns: 150px;
-  gap: 5px;
+  grid-template-columns: 1fr 1fr ; 
+  gap: 20px;
   padding: 1rem;
   width: min(70%,60rem);
 }
@@ -179,110 +178,4 @@ background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
 	border:4px black;
 }
 
-
-
-
-@media only screen and (max-width:320px){
-	.wrapper-main{
-         background: #7F7FD5;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); 
-		width:100%;
-	border:4px black;
-		}
-        .container{
-   
-    margin-right: auto;
-    margin-left: auto;
-  display: grid;
-  grid-template-columns: 150px ;
-  grid-auto-columns: 150px;
-  gap: 5px;
-  padding: 1rem;
-  width: min(70%,60rem);
-}
-body{
-    height: 100vh;
-width: 100%;
-border: black;
-}
-}
-
-@media only screen and (min-width:600px) {
-	.wrapper-main{
-		width:100%;
-         background: #7F7FD5;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); 
-		}
-        .container{
-   
-    margin-right: auto;
-    margin-left: auto;
-  display: grid;
-  grid-template-columns: 150px ;
-  grid-auto-columns: 150px;
-  gap: 5px;
-  padding: 1rem;
-  width: min(70%,60rem);
-}
-body{
-    height: 100vh;
-width: 100%;
-border: black;
-}
-}
-
-
-@media only screen and (min-width:768px){
-	.wrapper-main{
-		width:100%;
-         background: #7F7FD5;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); 
-		}
-        .container{
-   
-    margin-right: auto;
-    margin-left: auto;
-  display: grid;
-  grid-template-columns: 150px ;
-  grid-auto-columns: 150px;
-  gap: 2px;
-  padding: 1rem;
-  width: min(70%,60rem);}
-  body{
-    height: 100vh;
-width: 100%;
-border: black;
-
-}
-}
-
-
-
-@media only screen and (min-width:992px){
-	.wrapper-main{
-		width:100%;
-         background: #7F7FD5;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); 
-		}
-        .container{
-   
-    margin-right: auto;
-    margin-left: auto;
-  display: grid;
-  grid-template-columns: 150px ;
-  grid-auto-columns: 150px;
-  gap: 5px;
-  padding: 1rem;
-  width: min(70%,60rem);
-}
-body{
-    height: 100vh;
-width: 100%;
-border: black;
-}
-}
 
