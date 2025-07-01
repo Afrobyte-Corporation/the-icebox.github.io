@@ -1,8 +1,17 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
-body{
+
+
+
+body{  background: #7F7FD5;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
     height: 100vh;
 width: 100%;
-border: black;
 }
 
 .navbar-brand{
@@ -155,7 +164,7 @@ p{
            inset 0 0 .5em .25em var(--glow-color);
    }
    
-.container{
+.card-group{
    
     margin-right: auto;
     margin-left: auto;
@@ -168,14 +177,6 @@ p{
 
 
 
-.wrapper-main{
-    background: #7F7FD5;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); 
-	width:1000px;
-	padding:100px 0;
-	margin:0 auto;
-	border:4px black;
-}
+
 
 
