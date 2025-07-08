@@ -177,6 +177,7 @@ p{
 .grid{
      margin-right: auto;
     margin-left: auto;
+    align-items: center;
     display: grid;
     grid-template-columns: 1fr 1fr;
     max-width: 1200px;
