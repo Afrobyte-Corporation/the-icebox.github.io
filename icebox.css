@@ -175,9 +175,12 @@ p{
   width: min(70%,60rem);
 }
 .grid{
+     margin-right: auto;
+    margin-left: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     max-width: 1200px;
+    gap: 20px;
 }
 
 
