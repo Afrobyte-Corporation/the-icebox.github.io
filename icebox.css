@@ -175,13 +175,25 @@ p{
   width: min(70%,60rem);
 }
 .grid{
-     margin-right: auto;
-    margin-left: auto;
-    align-items: center;
+    
     display: grid;
     grid-template-columns: 1fr 1fr;
     max-width: 1200px;
     gap: 20px;
+    margin: 100px auto;
+}
+
+@media(max-width:1000px){
+    .card-group{
+        padding: 0.5rem;
+    }
+    p{
+        font-size: 1.5rem;
+    }
+
+    h5{
+        font-size: 2rem;
+    }
 }
 
 
