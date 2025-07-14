@@ -174,29 +174,33 @@ p{
   padding: 1rem;
   width: min(70%,60rem);
 }
+html{
+    font-size: 62.5%;
+}
+.main-container{
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 90%;
+}
 .grid{
     
     display: grid;
     grid-template-columns: 1fr 1fr;
     max-width: 1200px;
-    gap: 20px;
-    margin: 100px auto;
+    gap: 2rem;
+    margin: 10rem auto;
 }
 
-@media(max-width:1000px){
-    .card-group{
-        padding: 0.5rem;
-    }
-    p{
-        font-size: 1.5rem;
-    }
-
-    h5{
-        font-size: 2rem;
+@media(max-width:62.5rem){
+    html{ font-size: 50%;
     }
 }
 
-
+@media(max-width:31.2%){
+    html{
+        font-size: 37.5%;
+    }
+}
 
 
 
