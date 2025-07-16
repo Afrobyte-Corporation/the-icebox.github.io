@@ -194,12 +194,28 @@ html{
 @media(max-width:62.5rem){
     html{ font-size: 50%;
     }
+    .grid{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1200px;
+    gap: 2rem;
+    margin: 10rem auto;
+}
 }
 
 @media(max-width:31.2%){
     html{
         font-size: 37.5%;
     }
+    .grid{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1200px;
+    gap: 2rem;
+    margin: 10rem auto;
+}
 }
 
 
