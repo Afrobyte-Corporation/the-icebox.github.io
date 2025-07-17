@@ -62,13 +62,13 @@ width: 100%;
 
 h1{
     font-family: "Ranchers",system-ui;
-    font-size: 3.5rem;
+    font-size: 4rem;
     color:rgb(10, 99, 233) ;
     text-align: center;
 }
 h2{
     font-family: "Ranchers",system,ui;
-    font-size: 2.5rem;
+    font-size: 3rem;
     color:rgb(10, 99, 233) ;
     text-align: center;
 }
@@ -97,7 +97,7 @@ h3{
 
 h5{
     font-family: "Ranchers",system-ui;
-    font-size: 2.5rem;
+    font-size: 3rem;
     color:rgb(10, 99, 233) ;
     text-align:center;
 
