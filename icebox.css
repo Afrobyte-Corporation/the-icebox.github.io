@@ -197,7 +197,7 @@ html{
     .grid{
     
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr ;
     max-width: 1200px;
     gap: 2rem;
     margin: 10rem auto;
