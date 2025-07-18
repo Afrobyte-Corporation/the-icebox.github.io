@@ -21,7 +21,7 @@ background: linear-gradient(to right, #3B4371, #F3904F); /* W3C, IE 10+/ Edge, F
  align-self: center;
  justify-self: end;
  justify-content: center;
-mix-blend-mode: multiply;
+
 }
 .ranchers-regular {
   font-family: "Ranchers", system-ui;	
@@ -90,6 +90,5 @@ p{
 justify-content: left;}
 
 .container{
-    margin-left: auto;
-    margin-right: auto;
+  justify-content:center
 }
