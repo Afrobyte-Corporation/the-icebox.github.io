@@ -92,7 +92,6 @@ justify-content: left;}
 .container{
     display: grid;
   justify-content:center;
-  grid-template-columns: 1fr;
   align-content: center; 
    margin: auto;
 }
