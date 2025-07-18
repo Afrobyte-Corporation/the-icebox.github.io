@@ -82,16 +82,17 @@ height: 60%;
  justify-content: center;
 }
 
-.card{
+.card mb-3{
     display: grid;
     width: min(90%,90%);
     height: 50%;
 	 align-self: center;
  justify-content: center;
+ background-color: bisque;
 }
 
 .card-body{
-background-color: antiquewhite;
+background-color: bisque;
 }
 
 .logo-group{
