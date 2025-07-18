@@ -90,5 +90,7 @@ p{
 justify-content: left;}
 
 .container{
-  justify-content:center
+    display: grid;
+  justify-content:center;
+  grid-template-columns: 1fr;
 }
