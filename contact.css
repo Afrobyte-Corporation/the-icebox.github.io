@@ -67,8 +67,8 @@ p{
     font-size: 2rem;
     color:rgb(10, 99, 233) ;
 }
-.card-img{
-    display: block;
+.card-img-top{
+    display: grid;
     margin-left: auto;
     margin-right: auto;
     width: 60%;
@@ -76,7 +76,7 @@ p{
 }
 
 .card-img-overlay{
-    display: block;
+    display: grid;
     width: min(90%,90%);
     height: 50%;
 	 align-self: center;
