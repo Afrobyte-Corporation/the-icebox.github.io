@@ -40,16 +40,7 @@ background: linear-gradient(to right, #3B4371, #F3904F); /* W3C, IE 10+/ Edge, F
     color:rgb(10, 99, 233) ;
 
 }
-.columns{
-   
-    margin-right: 50rem auto;
-    margin-left:50rem auto;
-    width: min(95%, 95rem);
-    display: grid;
-    grid-template-columns: 45% 45% 45%;
-	
-	
-}
+
 
 .knewave-regular {
   font-family: "Knewave", system-ui;
@@ -80,6 +71,9 @@ p{
 height: 60%;
 }
 
+html{
+    font-size: 62.5%;
+}
 
 .card mb-3{
     display: grid;
@@ -120,4 +114,48 @@ ion-icon{
     height: 4rem;
     margin-left: auto;
     margin-right: auto;
+}
+
+main-container{
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 90%;
+}
+.grid{
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1200px;
+    gap: 2rem;
+    margin: 10rem auto;
+}
+
+@media(max-width:62.5rem){
+    html{ font-size: 50%;
+    }
+    .grid{
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    max-width: 1200px;
+    gap: 2rem;
+    margin: 10rem auto;
+}
+}
+
+@media(max-width:31.2%){
+    html{
+        font-size: 37.5%;
+    }
+    .grid{
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1200px;
+    gap: 2rem;
+    margin: 10rem auto;
+}
 }

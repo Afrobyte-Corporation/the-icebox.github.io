@@ -177,7 +177,7 @@ p{
 html{
     font-size: 62.5%;
 }
-.main-container{
+main-container{
     margin: 0 auto;
     max-width: 1200px;
     width: 90%;
