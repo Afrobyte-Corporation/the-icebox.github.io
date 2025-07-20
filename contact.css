@@ -106,12 +106,10 @@ height: 60%;
 
 .card-body{
 background-color: bisque;
-padding-bottom: 2rem;
+padding-bottom: 5rem;
 }
 
 .logo-group{
-    width: 10rem;
-    height: 10rem;
 	margin-left: auto;
     margin-right: auto;
 justify-content: left;}
@@ -121,4 +119,11 @@ justify-content: left;}
   justify-content:center;
   align-content: center; 
    margin: auto;
+}
+
+ion-icon{
+    width: 4rem;
+    height: 4rem;
+    margin-left: auto;
+    margin-right: auto;
 }
