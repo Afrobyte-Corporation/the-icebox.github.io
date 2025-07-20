@@ -82,6 +82,8 @@ html{
 	 align-self: center;
  justify-content: center;
  background-color: bisque;
+ margin-left: 0 auto;
+ margin-right: 0 auto;
 }
 
 .card{
@@ -89,6 +91,8 @@ html{
     align-self: center;
     justify-content: center;
     height: 35%;
+    margin-left: 0 auto;
+    margin-right: 0 auto;
 }
 
 .card-body{
