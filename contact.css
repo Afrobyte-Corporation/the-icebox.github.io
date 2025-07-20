@@ -102,12 +102,6 @@ padding-bottom: 3rem;
     margin-right: auto;
 justify-content: left;}
 
-.container{
-    display: grid;
-  justify-content:center;
-  align-content: center; 
-   margin: auto;
-}
 
 ion-icon{
     width: 4rem;
