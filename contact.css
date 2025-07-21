@@ -118,13 +118,14 @@ ion-icon{
 }
 
 main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0 auto;
     max-width: 1200px;
     width: 90%;
 }
 .grid{
-    margin-left: 0 auto;
-    margin-right: 0 auto;
     display: grid;
     grid-template-columns: 1fr;
     max-width: 1200px;
@@ -137,8 +138,6 @@ main-container{
     html{ font-size: 50%;
     }
     .grid{
-    margin-left: auto;
-    margin-right: auto;
     display: grid;
     grid-template-columns: 1fr ;
     max-width: 1200px;
