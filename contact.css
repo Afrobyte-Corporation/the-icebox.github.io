@@ -82,8 +82,8 @@ html{
 	 align-self: center;
  justify-content: center;
  background-color: bisque;
- margin-left: 0 auto;
- margin-right: 0 auto;
+ place-self: center;
+
 }
 
 .card{
@@ -91,9 +91,7 @@ html{
     align-self: center;
     justify-content: center;
     height: 35%;
-    margin-left: 0 auto;
-    margin-right: 0 auto;
-}
+   place-self: center;
 
 .card-body{
 background-color: bisque;
@@ -105,7 +103,7 @@ padding-bottom: 3rem;
 	margin-left: auto;
     margin-right: auto;
 justify-content: left;}
-
+}
 
 ion-icon{
     width: 4rem;
