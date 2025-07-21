@@ -80,7 +80,7 @@ html{
 	 align-self: center;
  justify-content: center;
  background-color: bisque;
- place-self: center;
+ place-content: center;
  padding: 2rem 4rem;
  gap: 2rem;
 
@@ -91,7 +91,7 @@ html{
     align-self: center;
     justify-content: center;
     height: 35%;
-   place-self: center;}
+   place-items: center;}
 
    .card-title{
     padding: 1rem;
@@ -107,9 +107,8 @@ gap: 1rem;
 }
 
 .logo-group{
-	margin-left: auto;
-    margin-right: auto;
-justify-content: left;}
+	justify-content: center;
+align-self: center;}
 
 
 ion-icon{
