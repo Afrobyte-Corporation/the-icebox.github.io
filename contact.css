@@ -161,5 +161,6 @@ main-container{
     max-width: 1200px;
     gap: 2rem;
     margin: 10rem auto;
+    place-items: center;
 }
 }
