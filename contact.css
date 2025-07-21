@@ -84,7 +84,7 @@ html{
  background-color: bisque;
  padding: 2rem 4rem;
  gap: 2rem;
-
+position: absolute;
 }
 
 .card{
@@ -92,6 +92,7 @@ html{
     align-self: center;
     justify-content: center;
     height: 35%;
+    position: absolute;
   }
 
    .card-title{
