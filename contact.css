@@ -129,7 +129,7 @@ main-container{
     display: grid;
     grid-template-columns: 1fr;
     max-width: 1200px;
-    gap: 2rem;
+    gap: 8rem;
     margin: 10rem auto;
     place-content: center;
 }
@@ -145,6 +145,7 @@ main-container{
     max-width: 1200px;
     gap: 2rem;
     margin: 10rem auto;
+    place-content: center;
 }
 }
 
