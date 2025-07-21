@@ -76,22 +76,21 @@ html{
 }
 
 .card mb-3{
-    display: grid;
+    display: flex;
 	 align-self: center;
  justify-content: center;
  background-color: bisque;
- place-content: center;
  padding: 2rem 4rem;
  gap: 2rem;
 
 }
 
 .card{
-    display: grid;
+    display: flex;
     align-self: center;
     justify-content: center;
     height: 35%;
-   place-items: center;}
+  }
 
    .card-title{
     padding: 1rem;
@@ -144,7 +143,7 @@ main-container{
     grid-template-columns: 1fr ;
     max-width: 1200px;
     gap: 2rem;
-    margin: 5rem auto;
+    margin: 10rem auto;
 }
 }
 
