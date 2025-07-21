@@ -84,6 +84,7 @@ html{
  background-color: bisque;
  place-self: center;
  padding: 2rem 4rem;
+ gap: 2rem;
 
 }
 
@@ -94,10 +95,17 @@ html{
     height: 35%;
    place-self: center;}
 
+   .card-title{
+    padding: 1rem;
+    gap: 1rem;
+
+   }
+
 .card-body{
 background-color: bisque;
 padding-top: 2rem;
 padding-bottom: 3rem;
+gap: 1rem;
 }
 
 .logo-group{
