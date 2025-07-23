@@ -137,6 +137,14 @@ main-container{
     place-content: center;
 }
 
+.container2{
+	  display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;	
+}
+
+
 @media(max-width:62.5rem){
     html{ font-size: 50%;
     }
