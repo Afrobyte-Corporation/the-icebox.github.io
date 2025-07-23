@@ -75,7 +75,8 @@ html{
 }
 
 .card mb-3{
-    display: flex;
+    display: grid;
+    margin: auto;
 	 align-self: center;
  justify-content: center;
  background-color: bisque;
@@ -85,7 +86,8 @@ html{
 }
 
 .card{
-    display: flex;
+    display: grid;
+    margin:auto;
     align-self: center;
     justify-content: center;
     height: 40%;
