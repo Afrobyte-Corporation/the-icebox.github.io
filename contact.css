@@ -82,7 +82,7 @@ html{
  background-color: bisque;
  padding: 2rem 4rem;
 padding-top: 1rem;
- padding-bottom: 3rem;
+ padding-bottom: 5rem;
 }
 
 .card{
@@ -96,13 +96,12 @@ padding-top: 1rem;
 
    .card-title{
     padding: 1rem;
-    gap: 1rem;
 
    }
 
 .card-body{
 padding-top: 2rem;
-padding-bottom: 2rem;
+padding-bottom: 1rem;
 gap: 1rem;
 }
 
