@@ -206,7 +206,7 @@ main-container{
 }
 }
 
-@media(max-width:31.2%){
+@media(max-width:31.2rem){
     html{
         font-size: 37.5%;
     }
