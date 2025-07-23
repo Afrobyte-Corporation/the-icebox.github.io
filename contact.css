@@ -115,6 +115,12 @@ align-self: center;}
     font-size: 2.5rem;
     color:rgb(73, 134, 210) }
 
+a{
+font-family: "Ranchers",system-ui;
+   font-size: 2rem;
+   color:rgb(73, 134, 210);
+}
+
 ion-icon{
     width: 7rem;
     height: 7rem;
@@ -157,6 +163,19 @@ main-container{
     gap: 2rem;
     margin: 10rem auto;
 }
+	a{
+font-family: "Ranchers",system-ui;
+   font-size: 4rem;
+   color:rgb(73, 134, 210);
+}
+ion-icon{
+    width: 6rem;
+    height: 6rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+	
 }
 
 @media(max-width:31.2rem){
@@ -205,5 +224,12 @@ p{
 a{
 font-family: "Ranchers",system-ui;
    font-size: 2rem;
-   color:rgb(10, 99, 233);
+   color:rgb(73, 134, 210);
+}
+ion-icon{
+    width: 4rem;
+    height: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+}	
 }
