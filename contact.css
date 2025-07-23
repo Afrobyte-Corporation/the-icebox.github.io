@@ -64,10 +64,10 @@ p{
     display: grid;
  margin: auto;
     width: 70%;
-height: 60%;
+height: 50%;
 justify-content: center;
 place-self: center;
-padding-top: 2rem;
+padding-top: 1rem;
 }
 
 html{
@@ -80,8 +80,8 @@ html{
 	 align-self: center;
  justify-content: center;
  background-color: bisque;
- padding: 2rem 4rem;
- gap: 2rem;
+ padding: 2rem 3rem;
+ 
 
 }
 
@@ -91,7 +91,6 @@ html{
     align-self: center;
     justify-content: center;
     height: 40%;
-    
     background-color: bisque;
   }
 
