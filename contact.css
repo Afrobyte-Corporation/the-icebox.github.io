@@ -167,4 +167,31 @@ main-container{
     margin: 10rem auto;
 
 }
+.card mb-3{
+    display: grid;
+    margin: auto;
+	 align-self: center;
+ justify-content: center;
+ background-color: bisque;
+ padding: 2rem 1.6rem;
+padding-top: 1rem;
+ padding-bottom: 7rem;
 }
+.card{
+    display: grid;
+    margin:auto;
+    align-self: center;
+    justify-content: center;
+    height: 40%;
+    background-color: bisque;
+  }
+	h5{
+    font-family: "Ranchers", system-ui;
+    font-size: 2.7rem;
+    color:rgb(73, 134, 210) ;
+    
+}
+p{
+    font-family: "Ranchers", system-ui;
+    font-size: 3rem;
+    color:rgb(73, 134, 210) ;}
