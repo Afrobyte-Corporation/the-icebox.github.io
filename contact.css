@@ -42,25 +42,21 @@ background: linear-gradient(to right, #3B4371, #F3904F); /* W3C, IE 10+/ Edge, F
 }
 
 
-.knewave-regular {
-  font-family: "Knewave", system-ui;
-  font-weight: 400;
-  font-style: normal;
-
-}
 
 h1{
-font-family: "Knewave", system-ui;
+font-family: "Ranchers", system-ui;
     font-size: 3.6rem;
     color:rgb(10, 99, 233) ;
    text-align: center;}
 
 h5{
-    font-family: "Knewave", system-ui;
+    font-family: "Ranchers", system-ui;
     font-size: 2.4rem;
-    color:rgb(10, 99, 233) ;}
+    color:rgb(10, 99, 233) ;
+    
+}
 p{
-    font-family: "Knewave", system-ui;
+    font-family: "Ranchers", system-ui;
     font-size: 2rem;
     color:rgb(10, 99, 233) ;
 }
@@ -85,7 +81,7 @@ html{
  background-color: bisque;
  padding: 2rem 4rem;
  gap: 2rem;
-position: absolute;
+
 }
 
 .card{
@@ -93,7 +89,7 @@ position: absolute;
     align-self: center;
     justify-content: center;
     height: 40%;
-    position: absolute;
+    
     background-color: bisque;
   }
 
@@ -166,7 +162,7 @@ main-container{
     margin-left: auto;
     margin-right: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     max-width: 1200px;
     gap: 2rem;
     margin: 10rem auto;
