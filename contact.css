@@ -94,6 +94,7 @@ position: absolute;
     justify-content: center;
     height: 35%;
     position: absolute;
+    background-color: bisque;
   }
 
    .card-title{
@@ -103,7 +104,6 @@ position: absolute;
    }
 
 .card-body{
-background-color: bisque;
 padding-top: 2rem;
 padding-bottom: 3rem;
 gap: 1rem;
