@@ -195,3 +195,9 @@ p{
     font-family: "Ranchers", system-ui;
     font-size: 3rem;
     color:rgb(73, 134, 210) ;}
+
+a{
+font-family: "Ranchers",system-ui;
+   font-size: 2rem;
+   color:rgb(10, 99, 233);
+}
