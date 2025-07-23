@@ -117,7 +117,7 @@ ion-icon{
 }
 
 main-container{
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
