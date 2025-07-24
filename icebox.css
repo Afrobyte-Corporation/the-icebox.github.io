@@ -152,6 +152,12 @@ p{
     margin-right: auto;
  }
 
+.card-img{
+	 display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 45%;
+    height: 30%;}
    
    button::after {
     pointer-events: none;
