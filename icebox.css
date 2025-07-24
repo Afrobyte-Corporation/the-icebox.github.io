@@ -45,11 +45,11 @@ width: 100%;
 
 .nav-item {
 	font-family: "Ranchers", system-ui;
-	font-size:2.2rem;
+	font-size:3.5rem;
 	 color:rgb(10, 99, 233) ;}
 .nav-link{
 	font-family: "Ranchers", system-ui;
-	font-size:2.2rem;
+	font-size:3.5rem;
 	 color:rgb(10, 99, 233) ;}
 
 .dropdown-item{
@@ -165,9 +165,7 @@ p{
    }
    
 .card-group{
-   
-    margin-right: auto;
-    margin-left: auto;
+   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr ; 
   gap: 20px;
