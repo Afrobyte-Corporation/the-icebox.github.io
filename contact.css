@@ -51,9 +51,12 @@ background: linear-gradient(to right, #3B4371, #F3904F); /* W3C, IE 10+/ Edge, F
     font-size: 4rem;
     color:rgb(73, 134, 210) ;}
 
-
-
-h1{
+.offcanvas-header{
+	 font-family: "Ranchers",system-ui;
+    font-size: 3rem;
+    color:rgb(73, 134, 210) ;}
+	
+	h1{
 font-family: "Ranchers", system-ui;
     font-size: 4rem;
     color:rgb(73, 134, 210) ;
