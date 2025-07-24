@@ -17,8 +17,6 @@ background: linear-gradient(to right, #3B4371, #F3904F); /* W3C, IE 10+/ Edge, F
 	font-color: white;
 }
 
-.nav-link active{
-	 color:rgb(73, 134, 210); }
 
 .navbar-brand{
  font-family: "Ranchers",system-ui;
