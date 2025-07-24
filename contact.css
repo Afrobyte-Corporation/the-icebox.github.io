@@ -10,14 +10,7 @@ background: -webkit-linear-gradient(to right, #3B4371, #F3904F);  /* Chrome 10-2
 background: linear-gradient(to right, #3B4371, #F3904F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
   
-#brand {
-   font-family: "Ranchers",system-ui;
-   font-size: 4rem;
-   color:rgb(10, 99, 233);  
-   display: block;
-   margin-left: auto;
-   margin-right: auto;
-}
+
 .btn btn-primary btn-lg ::target-text {
 	font-family: "Ranchers", system-ui;
 	font-size: 3.2rem;
