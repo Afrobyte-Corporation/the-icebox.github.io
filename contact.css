@@ -41,10 +41,15 @@ background: linear-gradient(to right, #3B4371, #F3904F); /* W3C, IE 10+/ Edge, F
 }
 .dropdown-item{
     font-family: "Ranchers",system-ui;
-    font-size: 2.5rem;
+    font-size: 3rem;
     color:rgb(10, 99, 233) ;
 
 }
+
+.offcanvas-body{
+	 font-family: "Ranchers",system-ui;
+    font-size: 4rem;
+    color:rgb(73, 134, 210) ;}
 
 
 
