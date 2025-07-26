@@ -86,6 +86,7 @@ padding-top: 1rem;
 
 .card-text-1{
 	padding-bottom: 2rem;
+	padding: 2rem 1rem;
 }
 
 .card-title-2{
@@ -95,10 +96,12 @@ padding-top: 1rem;
 .card-text-2{
 	padding-top: 2rem;
 	padding-bottom: 4rem;
+	padding: 2rem 1rem;
 }
 
 .card-text-3{
-	padding-bottom: 2rem;
+	padding-bottom: 3rem;
+	padding: 2rem 1rem;
 }
 
 .card-title-4{
@@ -107,7 +110,8 @@ padding-top: 1rem;
 
 .card-text-4{
 	padding-top: 2rem;
-	padding-bottom: 6rem;
+	padding-bottom: 4rem;
+	
 }
 
 .card-body{ 
@@ -206,10 +210,11 @@ p{
    }
    
 .card-group{
-   margin: auto;
+  margin: auto;
   display: grid;
   grid-template-columns: 1fr 1fr ; 
   gap: 20px;
+  column-gap: 2rem;
   padding: 1rem;
   width: min(70%,60rem);
 }
@@ -225,8 +230,8 @@ main-container{
     margin-left: auto;
     margin-right: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-	column-gap: 2rem;
+    grid-template-columns: 1fr 1fr;	 
+    column-gap: 2rem;
     max-width: 1200px;
     gap: 2rem;
     margin: 10rem auto;
@@ -240,6 +245,7 @@ main-container{
     margin-right: auto;
     display: grid;
     grid-template-columns: 1fr 1fr ;
+	column-gap: 2rem;
     max-width: 1200px;
     gap: 2rem;
     margin: 10rem auto;
