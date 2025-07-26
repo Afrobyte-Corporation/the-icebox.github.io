@@ -206,7 +206,7 @@ p{
    }
    
 .card-group{
-   margin: 0 auto;
+   margin: auto;
   display: grid;
   grid-template-columns: 1fr 1fr ; 
   gap: 20px;
@@ -226,6 +226,7 @@ main-container{
     margin-right: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
+	column-gap: 2rem;
     max-width: 1200px;
     gap: 2rem;
     margin: 10rem auto;
