@@ -104,6 +104,18 @@ h3{
 	padding-top: 2rem;
 }
 
+.card-body{ 
+	background-color: wheat;
+	
+	
+}
+
+
+
+
+
+
+
 .card-img-overlay{
     display: block;
     margin-left: auto;
