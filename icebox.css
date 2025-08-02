@@ -80,7 +80,7 @@ h3{
     color:rgb(10, 99, 233) ;
     text-align: center;
 }
-.card-title{
+.card-title-1{
 padding-top: 1rem;	
 }
 
@@ -91,7 +91,7 @@ padding-top: 1rem;
 
 .card-title-2{
 	padding-top: 2rem;
-	padding-bottom: 1rem;
+	padding-bottom: 3rem;
 }
 .card-text-2{
 	padding-top: 2rem;
