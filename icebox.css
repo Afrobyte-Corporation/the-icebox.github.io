@@ -210,7 +210,7 @@ p{
    }
    
 .card-group{
-  margin: auto;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr ; 
   gap: 20px;
