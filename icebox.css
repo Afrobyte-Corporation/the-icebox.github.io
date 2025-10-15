@@ -1,16 +1,20 @@
+/*
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+*/
 
-
-
+html {
+  line-height: 1.15; 
+  -webkit-text-size-adjust: 100%; 
+}
 
 body{  background: #7F7FD5;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
-    height: 100vh;
+min-height: 100vh;
 width: 100%;
 }
 
@@ -170,10 +174,10 @@ p{
 	 display: block;
     margin-left: auto;
     margin-right: auto;
-    max-width: 100%;
-    height: auto;}
+    max-width: 60%;
+    height: 60%;}
    
-   button::after {
+   .button-glow::after {
     pointer-events: none;
     content: "";
     position: absolute;
@@ -187,7 +191,7 @@ p{
     transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
    }
    
-   button:hover {
+   .button-glow:hover {
     color: var(--btn-color);
     background-color: var(--glow-color);
     box-shadow: 0 0 1em .25em var(--glow-color),
@@ -195,7 +199,7 @@ p{
            inset 0 0 .75em .25em var(--glow-color);
    }
    
-   button:active {
+   .button-glow:active {
     box-shadow: 0 0 0.6em .25em var(--glow-color),
            0 0 2.5em 2em var(--glow-spread-color),
            inset 0 0 .5em .25em var(--glow-color);
@@ -264,7 +268,7 @@ html{
 	.card-group{
   margin: auto;
   display: grid;
-  grid-template-columns: 1fr 1fr ; 
+  grid-template-columns: 1fr ; 
   gap: 20px;
   padding: 1rem;
   width: min(70%,60rem);
