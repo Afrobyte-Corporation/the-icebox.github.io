@@ -78,6 +78,12 @@ h3{
     color:rgb(102, 255, 255) ;
     text-align: center;
 }
+
+main {
+	display:grid;
+	gap:1rem;
+}
+
 .cards{
 	container-type: inline size;
 	gap:5rem;
