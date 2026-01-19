@@ -80,11 +80,13 @@ h3{
 }
 .cards{
 	container-type: inline size;
+	gap:5rem;
 }
 
 .card{
 	display: grid;
 	gap: 1rem;
+	background-color: wheat;
 }
 
 @media (min-width:760px){
@@ -102,23 +104,10 @@ h3{
 	.card h5 {grid-column: 1 / -1}
 } 
 
-.card-title{
-	padding-top: 2rem;
-	padding-bottom: 2rem;
-}
 
-
-
-
-.card-text{
-	padding: 2rem 1rem 6rem;	
-}
-
-.card-body{ 
-	background-color: wheat;
 	
 	
-}
+
 
 
 
