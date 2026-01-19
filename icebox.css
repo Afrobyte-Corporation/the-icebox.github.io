@@ -78,7 +78,14 @@ h3{
     color:rgb(102, 255, 255) ;
     text-align: center;
 }
+.cards{
+	cointainer-type: inline size;
+}
 
+.card{
+	display: grid;
+	gap: 1rem;
+}
 
 .card-title{
 	padding-top: 2rem;
