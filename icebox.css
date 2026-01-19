@@ -87,6 +87,12 @@ h3{
 	gap: 1rem;
 }
 
+@media (min-width:760px){
+	main{
+		grid-template-columns: 1fr 300px;
+	}
+}
+
 @container (width > 45ch) {
 
 	.card{
@@ -94,7 +100,7 @@ h3{
 			auto minmax(25ch, 1fr);
 	}
 	.card h5 {grid-column: 1 / -1}
-}
+} 
 
 .card-title{
 	padding-top: 2rem;
