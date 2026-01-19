@@ -197,29 +197,7 @@ p{
            inset 0 0 .5em .25em var(--glow-color);
    }
    
-.card-group{
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr; 
-  gap: 20px;
-  padding: 1rem;
-  width: min(70%,60rem);
-}
 
-.main-container{
-    margin: 0 auto;
-    max-width: 1200px;
-    width: 90%;
-}
-.grid{
-    margin-left: auto;
-    margin-right: auto;
-    display: grid;
-    grid-template-columns: 1fr ;	 
-    max-width: 1200px;
-    gap: 2rem;
-    margin: 10rem auto;
-}
 
 
 
