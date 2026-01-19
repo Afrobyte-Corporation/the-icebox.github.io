@@ -104,34 +104,17 @@ h3{
     color:rgb(10, 99, 233) ;
     text-align: center;
 }
-.card-title-1{
-padding-top: 1rem;	
-}
 
-.card-title-2{
+
+.card-title{
 	padding-top: 2rem;
 	padding-bottom: 2rem;
 }
 
-.card-title-4{
-	padding-bottom: 1rem;
-}
-
-.card-text-1{
-	padding: 2rem 1rem;
-}
 
 
-.card-text-2{
-	
-	padding: 2rem 1rem 4rem;
-}
 
-.card-text-3{
-	padding: 2rem 1rem 4rem;}
-
-
-.card-text-4{
+.card-text{
 	padding: 2rem 1rem 6rem;	
 }
 
