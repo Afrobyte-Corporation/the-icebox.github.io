@@ -92,6 +92,7 @@ main {
 
 .card{
 	display: grid;
+	text-align: center;
 	gap: 1rem;
 	border-radius: 1em;
 	background-color: wheat;
@@ -114,7 +115,11 @@ main {
 } 
 
 
-	
+	@cointainer cards (min-width 45ch) {
+		.card {
+    text-align: center		
+		} 
+}
 	
 
 
