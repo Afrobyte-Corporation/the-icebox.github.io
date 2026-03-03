@@ -142,13 +142,13 @@ main {
     height: auto;   
 }
 
-h5{
+/* h5{
     font-family: "Ranchers",system-ui;
     font-size: 2.75rem;
     color:rgb(48, 194, 239) ;
     text-align:center;
 
-}
+}*/
 p{
     font-family: "Ranchers",system-ui;
     font-size: 2rem;
