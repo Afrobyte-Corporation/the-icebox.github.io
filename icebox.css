@@ -85,7 +85,8 @@ main {
 }
 
 .cards{
-	container-type: inline size;
+    container: cards / inline-size;
+	
 	gap:5rem;
 	margin-left: auto;
 	margin-right: auto;	}
@@ -95,12 +96,13 @@ main {
 	text-align: center;
 	gap: 1rem;
 	border-radius: 1em;
+    padding: 2rem, 3rem;
 	background-color: wheat;
 	
 }
 
 
-.card h5{ font-size:7cqi; }
+.card h5{ font-size:clamp(1.5rem, 7cqi, 3rem); }
 
 @media (min-width:760px){
 	main{
@@ -118,11 +120,9 @@ main {
 } 
 
 
-	@cointainer cards (min-width 45ch) {
+	@container cards (min-width: 45ch) {
 		.card {
     text-align: center;
-		grid-template-columns: ;	
-			
 		} 
 }
 	
