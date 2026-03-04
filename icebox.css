@@ -99,8 +99,8 @@ main {
       gap: 1.5rem;
       border-radius: 1em;
       padding: 2rem 3rem;
-      box-shadow: 0 10px 15px rgba(0,0,0,0.1);
-	text-align: center;
+margin-inline: auto ;
+      text-align: center;
 	background-color: wheat;
     color: var(--color-primary-dark); 
 	
@@ -189,7 +189,7 @@ p{
 .card-img{
 	 display: block;
     margin-inline:auto;
-    max-width: 100%;
+    max-width: 73%;
     height: auto;}
    
    .button-glow::after {
