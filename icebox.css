@@ -92,17 +92,17 @@ main {
     container: cards / inline-size;
 	grid-template-columns: 1fr;
 	gap:5rem;
-	margin-inline: auto;	}
+	margin-inline: auto;}
 
 .card{
-    display: grid;
-      gap: 1.5rem;
-      border-radius: 1em;
-      padding: 2rem 3rem;
+ display: grid;
+  gap: 1.5rem;
+  border-radius: 1em;
+padding: 2rem 3rem;
 margin-inline: auto ;
-      text-align: center;
-	background-color: wheat;
-    color: var(--color-primary-dark); 
+text-align: center;
+background-color: wheat;
+color: var(--color-primary-dark); 
 	
 }
 
