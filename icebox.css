@@ -110,6 +110,11 @@ background-color: wheat;
 
 }
 
+.card-img-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .card h5{ font-size:clamp(1.5rem, 7cqi, 3rem); }
 
