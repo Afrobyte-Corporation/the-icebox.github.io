@@ -193,7 +193,7 @@ p {
 	 display: block;
     margin-inline:auto;
     max-width: 73%;
-    height: auto;}
+    height: 75%;}
    
    .button-glow::after {
     pointer-events: none;
