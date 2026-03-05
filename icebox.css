@@ -80,7 +80,7 @@ h3{
 }
 
 main {
-	display: grid;
+	display: flex;
       gap: 1rem;
       padding: 1rem;
       max-width: 1200px;
@@ -113,33 +113,16 @@ background-color: wheat;
 
 .card h5{ font-size:clamp(1.5rem, 7cqi, 3rem); }
 
-@media (min-width:760px){
-	main{
-		grid-template-columns: 1fr 300px;
-	}
-}
-
-@container (width > 45ch) {
-
-	.card{
-		grid-template-columns:
-			auto minmax(25ch, 1fr);
-	}
-	.card h5 {grid-column: 1 / -1; }
-} 
-
-
-	@container cards (min-width: 45ch) {
-		.card {
-    text-align: center;
-		} 
-}
-	
 
 
 
 
 
+.card-img{
+	 display: block;
+    margin-inline:auto;
+    max-width: 77%;
+    height: 75%;}
 
 
 
@@ -189,11 +172,7 @@ p {
     margin-right: auto;
  }
 
-.card-img{
-	 display: block;
-    margin-inline:auto;
-    max-width: 73%;
-    height: 75%;}
+
    
    .button-glow::after {
     pointer-events: none;
@@ -209,7 +188,7 @@ p {
     transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
    }
    
-   .button-glow:hover, .button-glow:focus-visible {
+    .button-glow:focus-visible {
     color: var(--btn-color);
     background-color: var(--glow-color);
     box-shadow: 0 0 1em .25em var(--glow-color),
@@ -225,7 +204,28 @@ p {
    
 
 
+@media (min-width:760px){
+	main{
+		grid-template-columns: 1fr 300px;
+	}
+}
 
+@container (width > 45ch) {
+
+	.card{
+		grid-template-columns:
+			auto minmax(25ch, 1fr);
+	}
+	.card h5 {grid-column: 1 / -1; }
+} 
+
+
+	@container cards (min-width: 45ch) {
+		.card {
+    text-align: center;
+		} 
+}
+	
 
 
 
