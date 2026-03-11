@@ -106,7 +106,7 @@ margin: auto ;
 text-align: center;
 background-color: wheat;
  justify-content: center;
-
+align-content: center;
 }
 
 .card-img-top{
