@@ -99,6 +99,7 @@ main {
 }
 
 .card{
+    display: inline-block;
   gap: 1.5rem;
   border-radius: 1em;
 padding: 2rem 3rem;
