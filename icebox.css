@@ -80,7 +80,7 @@ h3{
 }
 
 main {
-	display: flex;
+	display: grid;
       gap: 1rem;
       padding: 1rem;
       max-width: 1200px;
@@ -88,7 +88,7 @@ main {
 }
 
 .cards{
-    display: flex;
+    display: grid;
     container: cards / inline-size;
 	grid-template-columns: 1fr 1fr;
 	gap: 2rem;
