@@ -111,14 +111,7 @@ background-color: wheat;
  justify-content: center;
 align-content: center;
 }
-.carousel-inner{
-            width: 40rem;
-            height: 43rem;
-            margin: 0 auto;
-            background-size: contain;
-            background-repeat: no-repeat;
-            color: white;
-        }
+
 .card-img-top{
     display: grid;
     justify-content: center;
