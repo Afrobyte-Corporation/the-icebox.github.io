@@ -92,7 +92,7 @@ main {
     container: cards / inline-size;
 	grid-template-columns: 1fr 1fr;
 	gap: 2rem;
-    flex-wrap: wrap;
+    margin: auto;
     justify-content: center;
     align-items: center;  
     align-content: center;
@@ -115,9 +115,10 @@ align-content: center;
 .card-img-top{
     display: grid;
     justify-content: center;
-    align-items: center;
+    align-content: center;
     width: fit-content;
   height: fit-content;
+  margin: auto;
   object-fit: cover;
 }
 
