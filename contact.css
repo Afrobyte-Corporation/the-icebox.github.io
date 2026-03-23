@@ -10,6 +10,7 @@
    ===================== */
 html {
   font-size: 62.5%;
+
 }
  
 /* =====================
@@ -126,6 +127,26 @@ a {
   align-items: center;
   margin: 0 auto;
 }
+
+.location-section {
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+ 
+.location-section h5 {
+  margin-bottom: 3rem;
+}
+ 
+.location-section p {
+  margin-bottom: 2rem;
+}
+ 
+
+.order-btn-wrapper {
+  text-align: center;
+  margin: 4rem auto;
+}
  
 /* =====================
    CARDS
@@ -140,7 +161,7 @@ a {
   align-self: center;
   justify-content: center;
   background-color: bisque;
-  padding: 2rem 2.5rem 7rem 2.5rem;
+  padding: 4rem;
 }
  
 .card {
@@ -148,7 +169,7 @@ a {
   flex-direction: column;
   margin: auto;
   align-self: center;
-  min-height: 200px;
+  padding: 3rem;
   background-color: bisque;
   border-radius: 1em;
   overflow: hidden;
@@ -185,7 +206,7 @@ a {
    ===================== */
 .btn.btn-primary.btn-lg {
   font-family: "Ranchers", system-ui;
-  font-size: 1.8rem;
+  font-size: 2.3rem;
   color: white;
 }
  
