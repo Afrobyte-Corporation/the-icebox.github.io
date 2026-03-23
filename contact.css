@@ -1,240 +1,241 @@
- *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+ * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
  
- body {
-    background: #F3904F;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #3B4371, #F3904F);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #3B4371, #F3904F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  }
-  
-
-.btn btn-primary btn-lg ::target-text {
-	font-family: "Ranchers", system-ui;
-	font-size: 3.2rem;
-	font-color: white;
+/* =====================
+   BASE FONT SIZE
+   62.5% makes 1rem = 10px, easier to calculate
+   ===================== */
+html {
+  font-size: 62.5%;
 }
-
-
-.navbar-brand{
- font-family: "Ranchers",system-ui;
- color:rgb(10, 99, 233);
- font-size: 4rem;
- align-self: center;
- justify-self: end;
- justify-content: center;
-
+ 
+/* =====================
+   BODY
+   ===================== */
+body {
+  background: #F3904F; /* fallback */
+  background: -webkit-linear-gradient(to right, #3B4371, #F3904F);
+  background: linear-gradient(to right, #3B4371, #F3904F);
+  min-height: 100vh;
 }
+ 
+/* =====================
+   NAVBAR
+   Fixed: nav links were 3.5rem (way too large for a navbar)
+   ===================== */
+.navbar-brand {
+  font-family: "Ranchers", system-ui;
+  color: rgb(10, 99, 233);
+  font-size: 2.4rem;
+  align-self: center;
+}
+ 
 .ranchers-regular {
-  font-family: "Ranchers", system-ui;	
+  font-family: "Ranchers", system-ui;
   font-weight: 400;
   font-style: normal;
 }
-.dropdown-item{
-    font-family: "Ranchers",system-ui;
-    font-size: 3rem;
-    color:rgb(10, 99, 233) ;
-
+ 
+.offcanvas-body {
+  font-family: "Ranchers", system-ui;
+  font-size: 2rem;
+  color: rgb(73, 134, 210);
 }
-
-.offcanvas-body{
-	 font-family: "Ranchers",system-ui;
-    font-size: 4rem;
-    color:rgb(73, 134, 210) ;}
-
-.offcanvas-header{
-	 font-family: "Ranchers",system-ui;
-    font-size: 3rem;
-    color:rgb(73, 134, 210) ;}
-
-.nav-link{
-	 font-family: "Ranchers", system-ui;
-    font-size: 3.5rem;
-    color:rgb(73, 134, 210); }
-
-.nav-item{
-	 font-family: "Ranchers", system-ui;
-    font-size: 3.5rem;
-    color:rgb(73, 134, 210); }
-
-	h1{
-font-family: "Ranchers", system-ui;
-    font-size: 4rem;
-    color:rgb(73, 134, 210) ;
-   text-align: center;}
-
-h5{
-    font-family: "Ranchers", system-ui;
-    font-size: 2.7rem;
-    color:rgb(73, 134, 210) ;
-    
+ 
+.offcanvas-header {
+  font-family: "Ranchers", system-ui;
+  font-size: 2rem;
+  color: rgb(73, 134, 210);
 }
-p{
-    font-family: "Ranchers", system-ui;
-    font-size: 2.5rem;
-    color:rgb(73, 134, 210) ;}
-
-.card-img-top{
-    display: grid;
- margin: auto;
-    width: 70%;
-height: 30%;
-justify-content: center;
-place-self: center;
-
+ 
+/* Fixed: was 3.5rem — too large for nav */
+.nav-link,
+.nav-item {
+  font-family: "Ranchers", system-ui;
+  font-size: 1.6rem;
+  color: rgb(73, 134, 210);
 }
-
-html{
-    font-size: 62.5%;
+ 
+.dropdown-item {
+  font-family: "Ranchers", system-ui;
+  font-size: 1.6rem;
+  color: rgb(10, 99, 233);
 }
-
-.card mb-3{
-    display: grid;
-    margin: auto;
-	 align-self: center;
- justify-content: center;
- background-color: bisque;
- padding: 2rem 2.5rem;
-padding-top: 1rem;
- padding-bottom: 7rem;
+ 
+/* =====================
+   HEADINGS & TEXT
+   ===================== */
+h1 {
+  font-family: "Ranchers", system-ui;
+  font-size: 4rem;
+  color: rgb(73, 134, 210);
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
 }
-
-.card{
-    display: grid;
-    margin:auto;
-    align-self: center;
-    justify-content: center;
-    height: 40%;
-    background-color: bisque;
+ 
+h5 {
+  font-family: "Ranchers", system-ui;
+  font-size: 2.7rem;
+  color: rgb(73, 134, 210);
+}
+ 
+p {
+  font-family: "Ranchers", system-ui;
+  font-size: 2rem;
+  color: rgb(73, 134, 210);
+}
+ 
+/* Fixed: font-color is not valid CSS — correct property is color */
+a {
+  font-family: "Ranchers", system-ui;
+  font-size: 2rem;
+  color: rgb(73, 134, 210);
+}
+ 
+/* =====================
+   LAYOUT
+   ===================== */
+ 
+/* Fixed: was missing the dot — main-container is not a valid selector */
+.main-container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 90%;
+}
+ 
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 1200px;
+  gap: 4rem;
+  margin: 6rem auto;
+  place-content: center;
+  padding: 0 2rem;
+}
+ 
+.container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+ 
+/* =====================
+   CARDS
+   Fixed: ".card mb-3" used a space making it an invalid selector.
+          Correct syntax is .card.mb-3 (no space).
+   Fixed: height: 40% doesn't work without a fixed-height parent.
+          Use min-height instead.
+   ===================== */
+.card.mb-3 {
+  display: grid;
+  margin: auto;
+  align-self: center;
+  justify-content: center;
+  background-color: bisque;
+  padding: 2rem 2.5rem 7rem 2.5rem;
+}
+ 
+.card {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  align-self: center;
+  min-height: 200px;
+  background-color: bisque;
+  border-radius: 1em;
+  overflow: hidden;
+}
+ 
+.card-title {
+  padding: 1rem;
+}
+ 
+.card-body {
+  padding: 2rem 2rem 3rem 2rem;
+  gap: 1rem;
+  background-color: bisque;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+ 
+/* =====================
+   CARD IMAGE
+   Fixed: height: 30% won't work — use a fixed height with object-fit
+   ===================== */
+.card-img-top {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+ 
+/* =====================
+   CONTACT BUTTON
+   Fixed: ".btn btn-primary btn-lg" used spaces (invalid for one element).
+          Correct syntax uses dots with no spaces: .btn.btn-primary.btn-lg
+   Fixed: font-color → color
+   ===================== */
+.btn.btn-primary.btn-lg {
+  font-family: "Ranchers", system-ui;
+  font-size: 1.8rem;
+  color: white;
+}
+ 
+/* =====================
+   SOCIAL ICONS
+   ===================== */
+.logo-group {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  align-self: center;
+  margin-top: 1rem;
+}
+ 
+ion-icon {
+  width: 5rem;
+  height: 5rem;
+}
+ 
+/* =====================
+   MEDIA QUERIES
+   Fixed: removed repeated rules that were identical to the base styles.
+   Only override what actually needs to change at each breakpoint.
+   ===================== */
+ 
+@media (max-width: 62.5rem) {
+  html {
+    font-size: 50%;
   }
-
-   .card-title{
-    padding: 1rem;
-
-   }
-
-.card-body{
-padding-top: 2rem;
-padding-bottom: 3rem;
-gap: 1rem;
-background-color: bisque;
-}
-
-.logo-group{
-	justify-content: center;
-align-self: center;}
-
-a{
-font-family: "Ranchers",system-ui;
-   font-size: 2rem;
-   color:rgb(73, 134, 210);
-}
-
-ion-icon{
-    width: 5rem;
-    height: 5rem;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-main-container{
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    max-width: 1200px;
-    width: 90%;
-}
-.grid{
-    display: grid;
+ 
+  .grid {
     grid-template-columns: 1fr;
-    max-width: 1200px;
-    gap: 10rem;
-    margin: 10rem auto;
-    place-content: center;
-}
-
-.container2{
-	  display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;	
-}
-
-
-@media(max-width:62.5rem){
-    html{ font-size: 50%;
-    }
-    .grid{
-    display: grid;
-    grid-template-columns: 1fr ;
-    max-width: 1200px;
     gap: 2rem;
-    margin: 10rem auto;
-}
-	a{
-font-family: "Ranchers",system-ui;
-   font-size: 4rem;
-   color:rgb(73, 134, 210);
-}
-
-	
-}
-
-@media(max-width:31.2rem){
-    html{
-        font-size: 37.5%;
-    }
-    .grid{
-    margin-left: auto;
-    margin-right: auto;
-    display: grid;
-    grid-template-columns: 1fr;
-    max-width: 1200px;
-    gap: 2rem;
-    margin: 10rem auto;
-
-}
-.card mb-3{
-    display: grid;
-    margin: auto;
-	 align-self: center;
- justify-content: center;
- background-color: bisque;
- padding: 2rem 2.5rem;
-padding-top: 1rem;
- padding-bottom: 7rem;
-}
-.card{
-    display: grid;
-    margin:auto;
-    align-self: center;
-    justify-content: center;
-    height: 40%;
-    background-color: bisque;
+    margin: 6rem auto;
   }
-	h5{
-    font-family: "Ranchers", system-ui;
-    font-size: 2.7rem;
-    color:rgb(73, 134, 210) ;
-    
 }
-p{
-    font-family: "Ranchers", system-ui;
-    font-size: 3rem;
-    color:rgb(73, 134, 210) ;}
-
-a{
-font-family: "Ranchers",system-ui;
-   font-size: 2rem;
-   color:rgb(73, 134, 210);
-}
-ion-icon{
+ 
+@media (max-width: 31.2rem) {
+  html {
+    font-size: 37.5%;
+  }
+ 
+  .grid {
+    gap: 2rem;
+    margin: 4rem auto;
+  }
+ 
+  ion-icon {
     width: 4rem;
     height: 4rem;
-    margin-left: auto;
-    margin-right: auto;
-}	
+  }
 }
+ 
