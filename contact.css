@@ -111,7 +111,7 @@ a {
   width: 90%;
 }
  
-.grid {
+.contact-grid {
   display: grid;
   grid-template-columns: 1fr;
   max-width: 1200px;
@@ -155,7 +155,7 @@ a {
    Fixed: height: 40% doesn't work without a fixed-height parent.
           Use min-height instead.
    ===================== */
-.card.mb-3 {
+.card-contact {
   display: grid;
   margin: auto;
   align-self: center;
@@ -176,7 +176,7 @@ a {
     align-content: center;
 }
  
-.card {
+.card-social {
   display: flex;
   flex-direction: column;
    gap: 1rem;
