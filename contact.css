@@ -42,13 +42,13 @@ body {
  
 .offcanvas-body {
   font-family: "Ranchers", system-ui;
-  font-size: 2rem;
+  font-size: 2.3rem;
   color: rgb(73, 134, 210);
 }
  
 .offcanvas-header {
   font-family: "Ranchers", system-ui;
-  font-size: 2rem;
+  font-size: 2.3rem;
   color: rgb(73, 134, 210);
 }
  
@@ -56,7 +56,7 @@ body {
 .nav-link,
 .nav-item {
   font-family: "Ranchers", system-ui;
-  font-size: 1.6rem;
+  font-size: 2.3rem;
   color: rgb(73, 134, 210);
 }
  
@@ -71,7 +71,7 @@ body {
    ===================== */
 h1 {
   font-family: "Ranchers", system-ui;
-  font-size: 4rem;
+  font-size: 5rem;
   color: rgb(73, 134, 210);
   text-align: center;
   margin-top: 3rem;
@@ -80,7 +80,7 @@ h1 {
  
 h5 {
   font-family: "Ranchers", system-ui;
-  font-size: 2.7rem;
+  font-size: 2.3rem;
   color: rgb(73, 134, 210);
 }
  
