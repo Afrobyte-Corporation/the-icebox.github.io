@@ -156,6 +156,8 @@ a {
   display: grid;
   margin: auto;
   align-self: center;
+   align-items: center;  
+    align-content: center;
   justify-content: center;
   background-color: bisque;
   padding: 4rem;
