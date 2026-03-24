@@ -193,8 +193,8 @@ a {
    Fixed: height: 30% won't work — use a fixed height with object-fit
    ===================== */
 .card-img-top {
-  width: 100%;
-  height: 250px;
+  width: auto;
+  height: auto;
   object-fit: cover;
 }
  
@@ -232,31 +232,30 @@ ion-icon {
    Only override what actually needs to change at each breakpoint.
    ===================== */
  
-@media (max-width: 62.5rem) {
-  html {
-    font-size: 50%;
-  }
- 
-  .grid {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-    margin: 6rem auto;
+@media (min-width: 600px) and (max-width: 900px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
- 
-@media (max-width: 31.2rem) {
-  html {
-    font-size: 37.5%;
-  }
- 
-  .grid {
-    gap: 2rem;
-    margin: 4rem auto;
-  }
- 
-  ion-icon {
-    width: 4rem;
-    height: 4rem;
-  }
+
+@container (width > 45ch) {
+
+	.card{
+		grid-template-columns:
+			auto minmax(25ch, 1fr);
+	}
+	.card h5 {grid-column: 1 / -1; }
+} 
+
+
+	@container cards (min-width: 45ch) {
+		.card {
+    text-align: center;
+		} 
 }
+ 
+  
+ 
+
+ 
  
