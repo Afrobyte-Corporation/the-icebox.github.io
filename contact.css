@@ -164,6 +164,13 @@ a {
   padding: 4rem;
 }
 
+main {
+	display: grid;
+      gap: 1rem;
+      padding: 1rem;
+      max-width: 1200px;
+      margin-inline: auto;
+}
 .cards{
     display: grid;
     container: cards / inline-size;
@@ -195,7 +202,9 @@ a {
 }
  
 .card-body {
-  padding: 2rem 2rem 3rem 2rem;
+  padding: ;
+  margin: auto;
+
   gap: 1rem;
   background-color: bisque;
   display: flex;
