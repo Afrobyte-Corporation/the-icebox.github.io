@@ -153,7 +153,8 @@ a {
           Use min-height instead.
    ===================== */
 .card-contact {
-  display: grid;
+  display: flex;
+   flex-direction: column;
   margin: auto;
   align-self: center;
    align-items: center;  
