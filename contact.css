@@ -4,23 +4,20 @@
   box-sizing: border-box;
 }
  
-/* =====================
-   BASE FONT SIZE
-   62.5% makes 1rem = 10px, easier to calculate
-   ===================== */
-html {
-  font-size: 62.5%;
-
+  line-height: 1.15; 
+  -webkit-text-size-adjust: 100%; 
 }
  
 /* =====================
    BODY
    ===================== */
 body {
+   width: 100%;
+  height: 100%;
   background: #F3904F; /* fallback */
   background: -webkit-linear-gradient(to right, #3B4371, #F3904F);
   background: linear-gradient(to right, #3B4371, #F3904F);
-  min-height: 100vh;
+  
 }
  
 /* =====================
