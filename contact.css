@@ -26,7 +26,6 @@ body {
 .navbar-brand {
   font-family: "Ranchers", system-ui;
   color: rgb(51, 206, 255);
-  background-color: bisque;
   font-size: var(--font-size-base-md);
   align-self: center;
 }
@@ -48,6 +47,7 @@ background-color: wheat;
   font-family: "Ranchers", system-ui;
   font-size: var(--font-size-lg);
   color: rgb(51, 206, 255);
+  background-color: bisque;
 }
 
 .nav-link{
