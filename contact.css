@@ -169,11 +169,10 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0;
+  width: 100%; /* fills the grid column, which is already capped at 500px */
   background-color: bisque;
   border-radius: 1em;
   overflow: hidden;
-  padding: 0; /* let card-body handle inner padding */
 }
 
 /* Fixed: removed duplicate border-radius declaration */
