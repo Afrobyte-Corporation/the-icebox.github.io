@@ -170,6 +170,7 @@ main {
   flex-direction: column;
   align-items: center;
  max-width: minmax(300px, 500px); /* fills the grid column, which is already capped at 500px */
+ width: 100%;
   background-color: bisque;
   margin: 4rem auto;
   overflow: hidden;
