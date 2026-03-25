@@ -25,7 +25,8 @@ body {
    ===================== */
 .navbar-brand {
   font-family: "Ranchers", system-ui;
-  color: rgb(10, 99, 233);
+  color: rgb(51, 206, 255);
+  background-color: bisque;
   font-size: var(--font-size-base-md);
   align-self: center;
 }

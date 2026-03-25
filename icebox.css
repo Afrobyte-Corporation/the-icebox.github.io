@@ -18,6 +18,7 @@ background: linear-gradient(to right, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, F
     font-family: "Ranchers",system-ui;
     font-size: var(--font-size-base-md);
     color:rgb(51, 206, 255) ;
+    background-color: bisque;
 
 }
 
