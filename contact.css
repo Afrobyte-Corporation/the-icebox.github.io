@@ -169,10 +169,13 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 1.5rem;
+  gap: 1rem;
   width: 100%; /* fills the grid column, which is already capped at 500px */
   background-color: bisque;
   border-radius: 1em;
   overflow: hidden;
+  text-align: center;
 }
 
 /* Fixed: removed duplicate border-radius declaration */
