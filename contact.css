@@ -171,7 +171,6 @@ main {
   align-items: center;
   width: 100%;        /* fills the grid column */
   max-width: 80%;   /* plain pixel value here, not minmax() */
-  height: 500px;
   background-color: bisque;
   border-radius: 1em;
   margin: 0 auto;     /* centers it if it's narrower than its container */
