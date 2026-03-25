@@ -1,28 +1,27 @@
- * {
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
- html{
-  line-height: 1.15; 
-  -webkit-text-size-adjust: 100%; 
+
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
 }
- 
+
 /* =====================
    BODY
    ===================== */
 body {
-   width: 100%;
-  height: 100%;
+  width: 100%;
+  min-height: 100vh;
   background: #F3904F; /* fallback */
   background: -webkit-linear-gradient(to right, #3B4371, #F3904F);
   background: linear-gradient(to right, #3B4371, #F3904F);
-  
 }
- 
+
 /* =====================
    NAVBAR
-   Fixed: nav links were 3.5rem (way too large for a navbar)
    ===================== */
 .navbar-brand {
   font-family: "Ranchers", system-ui;
@@ -30,39 +29,38 @@ body {
   font-size: 2.4rem;
   align-self: center;
 }
- 
+
 .ranchers-regular {
   font-family: "Ranchers", system-ui;
   font-weight: 400;
   font-style: normal;
 }
- 
+
 .offcanvas-body {
   font-family: "Ranchers", system-ui;
   font-size: 2.3rem;
   color: rgb(73, 134, 210);
 }
- 
+
 .offcanvas-header {
   font-family: "Ranchers", system-ui;
   font-size: 2.3rem;
   color: rgb(73, 134, 210);
 }
- 
-/* Fixed: was 3.5rem — too large for nav */
+
 .nav-link,
 .nav-item {
   font-family: "Ranchers", system-ui;
   font-size: 2.3rem;
   color: rgb(73, 134, 210);
 }
- 
+
 .dropdown-item {
   font-family: "Ranchers", system-ui;
   font-size: 1.6rem;
   color: rgb(10, 99, 233);
 }
- 
+
 /* =====================
    HEADINGS & TEXT
    ===================== */
@@ -74,31 +72,28 @@ h1 {
   margin-top: 3rem;
   margin-bottom: 2rem;
 }
- 
+
 h5 {
   font-family: "Ranchers", system-ui;
   font-size: 2.3rem;
   color: rgb(73, 134, 210);
 }
- 
+
 p {
   font-family: "Ranchers", system-ui;
   font-size: 2rem;
   color: rgb(73, 134, 210);
 }
- 
-/* Fixed: font-color is not valid CSS — correct property is color */
+
 a {
   font-family: "Ranchers", system-ui;
   font-size: 2rem;
   color: rgb(73, 134, 210);
 }
- 
+
 /* =====================
    LAYOUT
    ===================== */
- 
-/* Fixed: was missing the dot — main-container is not a valid selector */
 .main-container {
   display: grid;
   justify-content: center;
@@ -107,17 +102,18 @@ a {
   max-width: 1200px;
   width: 90%;
 }
- 
+
+/* Fixed: was grid-template-columns: 1fr (always one column).
+   Now uses auto-fill so two cards sit side by side on wider screens. */
 .contact-grid {
   display: grid;
-  grid-template-columns: 1fr;
-  max-width: 1200px;
-  gap: 4rem;
-  margin: 6rem auto;
-  place-content: center;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  max-width: 900px;
+  gap: 3rem;
+  margin: 4rem auto;
   padding: 0 2rem;
 }
- 
+
 .container2 {
   display: flex;
   justify-content: center;
@@ -130,110 +126,104 @@ a {
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
- 
+
 .location-section h5 {
   margin-bottom: 3rem;
 }
- 
+
 .location-section p {
   margin-bottom: 2rem;
 }
- 
 
 .order-btn-wrapper {
   text-align: center;
   margin: 4rem auto;
 }
- 
+
+/* =====================
+   MAIN & CARDS GRID
+   ===================== */
+main {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+.cards {
+  display: grid;
+  container: cards / inline-size;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
+  margin: auto;
+  justify-content: center;
+}
+
 /* =====================
    CARDS
-   Fixed: ".card mb-3" used a space making it an invalid selector.
-          Correct syntax is .card.mb-3 (no space).
-   Fixed: height: 40% doesn't work without a fixed-height parent.
-          Use min-height instead.
+   Fixed: removed duplicate align-content and align-self — align-items: center is enough.
    ===================== */
 .card-contact {
   display: flex;
-   flex-direction: column;
-  margin: auto;
-  align-self: center;
-   align-items: center;  
-    align-content: center;
-  justify-content: center;
-  background-color: bisque;
-  padding: 4rem;
-}
-
-main {
-	display: grid;
-      gap: 1rem;
-      padding: 1rem;
-      max-width: 1200px;
-      margin-inline: auto;
-}
-.cards{
-    display: grid;
-    container: cards / inline-size;
-	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 2rem;
-  padding: 1rem;
-    margin: auto;
-    justify-content: center;
-    align-items: center;  
-    align-content: center;
-}
- 
-.card-social {
-  display: flex;
   flex-direction: column;
-   gap: 1rem;
-    border-radius: 1em;
+  align-items: center;
   margin: auto;
-  align-self: center;
-  padding: 3rem;
   background-color: bisque;
   border-radius: 1em;
   overflow: hidden;
+  padding: 0; /* let card-body handle inner padding */
+}
+
+/* Fixed: removed duplicate border-radius declaration */
+.card-social {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 1em;
+  margin: auto;
+  padding: 3rem;
+  background-color: bisque;
+  overflow: hidden;
   align-items: center;
 }
- 
+
 .card-title {
   padding: 1rem;
 }
- 
-.card-body {
-  padding:3rem ;
-  margin: auto;
 
+.card-body {
+  padding: 3rem;
+  margin: auto;
   gap: 1rem;
   background-color: bisque;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
- 
+
 /* =====================
    CARD IMAGE
-   Fixed: height: 30% won't work — use a fixed height with object-fit
+   Fixed: width/height: auto means the image uses its natural size,
+   which can be enormous. width: 100% + fixed height + object-fit
+   keeps it contained and proportional.
    ===================== */
 .card-img-top {
-  width: auto;
-  height: auto;
+  width: 100%;
+  height: 280px;
   object-fit: cover;
 }
- 
+
 /* =====================
    CONTACT BUTTON
-   Fixed: ".btn btn-primary btn-lg" used spaces (invalid for one element).
-          Correct syntax uses dots with no spaces: .btn.btn-primary.btn-lg
-   Fixed: font-color → color
    ===================== */
 .btn.btn-primary.btn-lg {
   font-family: "Ranchers", system-ui;
   font-size: 2.3rem;
   color: white;
 }
- 
+
 /* =====================
    SOCIAL ICONS
    ===================== */
@@ -244,42 +234,39 @@ main {
   align-self: center;
   margin-top: 1rem;
 }
- 
+
 ion-icon {
   width: 5rem;
   height: 5rem;
 }
- 
+
+/* =====================
+   CONTAINER QUERIES
+   Fixed: updated selectors from .card to .card-contact
+   so the rules actually target your elements.
+   ===================== */
+@container (width > 45ch) {
+  .card-contact {
+    grid-template-columns: auto minmax(25ch, 1fr);
+  }
+
+  .card-contact h5 {
+    grid-column: 1 / -1;
+  }
+}
+
+@container cards (min-width: 45ch) {
+  .card-contact,
+  .card-social {
+    text-align: center;
+  }
+}
+
 /* =====================
    MEDIA QUERIES
-   Fixed: removed repeated rules that were identical to the base styles.
-   Only override what actually needs to change at each breakpoint.
    ===================== */
- 
 @media (min-width: 600px) and (max-width: 900px) {
   .cards {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-
-@container (width > 45ch) {
-
-	.card{
-		grid-template-columns:
-			auto minmax(25ch, 1fr);
-	}
-	.card h5 {grid-column: 1 / -1; }
-} 
-
-
-	@container cards (min-width: 45ch) {
-		.card {
-    text-align: center;
-		} 
-}
- 
-  
- 
-
- 
- 
