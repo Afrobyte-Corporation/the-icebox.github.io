@@ -172,7 +172,7 @@ main {
   gap: 1rem;
   width: 100%; /* fills the grid column, which is already capped at 500px */
   background-color: bisque;
-  border-radius: 1em;
+  border-radius: 2rem;
   overflow: hidden;
   text-align: center;
 }
