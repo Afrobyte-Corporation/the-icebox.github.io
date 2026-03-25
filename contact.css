@@ -107,12 +107,12 @@ a {
    Now uses auto-fill so two cards sit side by side on wider screens. */
 .contact-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  max-width: 900px;
+  grid-template-columns: minmax(300px, 500px); /* minmax goes HERE in the grid */
   gap: 3rem;
   margin: 4rem auto;
   padding: 0 2rem;
 }
+
 
 .container2 {
   display: flex;
@@ -169,10 +169,11 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
- max-width: minmax(300px, 500px); /* fills the grid column, which is already capped at 500px */
- width: 100%;
+  width: 100%;        /* fills the grid column */
+  max-width: 500px;   /* plain pixel value here, not minmax() */
   background-color: bisque;
-  margin: 4rem auto;
+  border-radius: 1em;
+  margin: 0 auto;     /* centers it if it's narrower than its container */
   overflow: hidden;
 }
 
