@@ -179,6 +179,7 @@ main {
   max-width: 1100px;   /* plain pixel value here, not minmax() */
   background-color: bisque;
   border-radius: 1em;
+  padding: 1rem;
  margin: 0 auto;
   overflow: hidden;
 }
@@ -218,7 +219,7 @@ main {
    ===================== */
 .card-img-top {
   width: 100%;
-  height: 197px;
+  height: 199px;
   object-fit: cover;
 }
 
