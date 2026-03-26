@@ -78,8 +78,7 @@ h1 {
   text-align: center;
   margin-top: 3rem;
   margin-bottom: 2rem;
-  margin-left: auto;
-  margin-right: auto;
+ 
 }
 
 h5 {
@@ -182,7 +181,8 @@ main {
   max-width: 800px;   /* plain pixel value here, not minmax() */
   background-color: bisque;
   border-radius: 1em;
-  margin: 0 auto;     /* centers it if it's narrower than its container */
+  margin-left: auto;
+  margin-right: auto;
   overflow: hidden;
 }
 
