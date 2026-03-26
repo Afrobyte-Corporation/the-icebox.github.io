@@ -40,14 +40,14 @@ body {
   font-family: "Ranchers", system-ui;
   font-size: var(--font-size-md);
     color:rgb(51, 206, 255) ;
-background-color: wheat;
+background-color: bisque;
 }
 
 .offcanvas-header {
   font-family: "Ranchers", system-ui;
   font-size: var(--font-size-lg);
   color: rgb(51, 206, 255);
-  background-color: bisque;
+  background: wheat;
 }
 
 .nav-link{
