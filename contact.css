@@ -75,7 +75,8 @@ h1 {
   font-size: 4rem;
   color: rgb(73, 134, 210);
   max-width: 800px;
-  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 3rem;
   margin-bottom: 2rem;
  
