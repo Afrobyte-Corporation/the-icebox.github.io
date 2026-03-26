@@ -78,6 +78,8 @@ h1 {
   text-align: center;
   margin-top: 3rem;
   margin-bottom: 2rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 h5 {
@@ -116,7 +118,7 @@ a {
   display: grid;
   grid-template-columns: minmax(300px, 800px); /* minmax goes HERE in the grid */
   gap: 3rem;
-  margin: 4rem auto;
+  margin: 0 auto 4rem auto;
   padding: 0 2rem;
 }
 
