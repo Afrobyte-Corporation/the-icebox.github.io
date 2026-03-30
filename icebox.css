@@ -204,6 +204,7 @@ p {
 .order-btn-wrapper {
   text-align: center;
   margin: 4rem auto;
+  outline-color: transparent;
 }
 
 /* From Uiverse.io by cssbuttons-io */ 
