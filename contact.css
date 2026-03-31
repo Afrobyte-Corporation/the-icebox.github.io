@@ -162,7 +162,7 @@ main {
 .cards {
   display: grid;
   container: cards / inline-size;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
   gap: 2rem;
   padding: 1rem;
   margin: auto;
@@ -174,7 +174,7 @@ main {
    Fixed: removed duplicate align-content and align-self — align-items: center is enough.
    ===================== */
 .card-contact {
-  display: flex;
+  display: grid;
   flex-direction: column;
   align-items: center;
   width: 100%;        /* fills the grid column */
@@ -188,7 +188,7 @@ main {
 
 /* Fixed: removed duplicate border-radius declaration */
 .card-social {
-  display: flex;
+  display: grid;
   flex-direction: column;
   gap: 1rem;
   border-radius: 1em;
