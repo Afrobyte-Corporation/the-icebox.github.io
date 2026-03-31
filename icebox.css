@@ -17,7 +17,7 @@ background: linear-gradient(to right, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, F
     margin-right: auto;
     font-family: "Ranchers",system-ui;
     font-size: var(--font-size-base-md);
-     color:rgb(249, 208, 3) ;
+     color:rgb(249, 208, 3);
 
 }
 
@@ -31,14 +31,14 @@ background: linear-gradient(to right, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, F
 .offcanvas-body{
 	 font-family: "Ranchers",system-ui;
     font-size: var(--font-size-md);
-    color:rgb(249, 208, 3) ;
- background: -webkit-linear-gradient (#9a11b2);
+    color:rgb(249, 208, 3);
+ background: -webkit-linear-gradient(#9a11b2);
   background: linear-gradient( #9a11b2);}
 
 .offcanvas-header{
 	 font-family: "Ranchers",system-ui;
     font-size: var(--font-size-lg);
-    color:rgb(249, 208, 3) ;
+    color:rgb(249, 208, 3);
     background: -webkit-linear-gradient(to right, #4e0a78, #9a11b2);
   background: linear-gradient(to right, #430a78, #9a11b2);}
 
