@@ -28,6 +28,15 @@ background: linear-gradient(to right, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, F
   font-weight: 400;
   font-style: normal;
 }
+
+.offcanvas-title{
+  font-family: "Ranchers", system-ui;
+  font-size: 1.8rem;
+  color:rgb(249, 208, 3);
+
+}
+
+
 .offcanvas-body{
 	 font-family: "Ranchers",system-ui;
     font-size: var(--font-size-md);
