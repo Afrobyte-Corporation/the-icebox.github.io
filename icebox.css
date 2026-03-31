@@ -31,15 +31,15 @@ background: linear-gradient(to right, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, F
 .offcanvas-body{
 	 font-family: "Ranchers",system-ui;
     font-size: var(--font-size-md);
-    color:rgb(51, 206, 255) ;
-background-color: wheat;
+    color:rgb(249, 208, 3) ;
+background-color: rgb(191, 88, 229);
 }
 
 .offcanvas-header{
 	 font-family: "Ranchers",system-ui;
     font-size: var(--font-size-lg);
-    color:rgb(51, 206, 255) ;
-    background-color: bisque;
+    color:rgb(249, 208, 3) ;
+    background-color: rgb(144, 39, 182);
   }
 
 
