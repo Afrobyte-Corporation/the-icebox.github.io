@@ -188,14 +188,14 @@ main {
 /* Card image: always fills width, fixed height,
    never stretches */
 
-.card-img-top{
+
     .card-img-top {
   width: 100%;
   height: 200px;
   object-fit: cover; 
   border-radius: 0.5em;
 }
-}
+
 
 .card h5{ font-size:clamp(1.2rem, 5cqi, 2rem); }
 
