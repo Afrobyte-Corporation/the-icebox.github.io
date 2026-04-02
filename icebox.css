@@ -51,7 +51,12 @@ background: linear-gradient(to right, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, F
     background: -webkit-linear-gradient(to right, #4e0a78, #9a11b2);
   background: linear-gradient(to right, #430a78, #9a11b2);}
 
-
+.nav-link,
+.nav-item {
+  font-family: "Ranchers", system-ui;
+  font-size: 1.4rem;
+  color:rgb(249, 208, 3) ;
+}
 .nav-item {
 	font-family: "Ranchers", system-ui;
 	font-size: 1.4rem;
@@ -61,40 +66,46 @@ background: linear-gradient(to right, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, F
 	font-size: 1.4rem;
 	  color:rgb(249, 208, 3) ;}
 
-.dropdown-item{
-    font-family: "Ranchers",system-ui;
-    font-size: 1.3rem;
-     color:rgb(249, 208, 3) ;
-}
+.dropdown-item {
+  font-family: "Ranchers", system-ui;
+  font-size: 1.3rem;
+ color:rgb(249, 208, 3) ;}
 
 
-
-h1{
-    font-family: "Ranchers",system-ui;
-    font-size: 5.9rem;
-    color:rgb(48, 194, 239) ;
-    text-align: center;
-      margin-top: 2.5rem;
+/* ================================================
+   12. TYPOGRAPHY SCALE
+   Fluid heading sizes using clamp():
+   clamp(min, preferred, max)
+   Scales smoothly between breakpoints with
+   no media queries needed.
+   ================================================ */
+h1 {
+  font-size: clamp(2.5rem, 5vw, 6rem);
+  text-align: center;
+  margin-top: 2.5rem;
   margin-bottom: 1.5rem;
 }
-h2{
-    font-family: "Ranchers",system-ui;
-   font-size: 3.5rem;
-    color:rgb(48, 194, 239) ;
-    text-align: center;
-     margin-top: 1rem;
-  margin-bottom: 1rem;
-   margin-top: 1rem;
+
+h2 {
+  font-size: clamp(1.8rem, 3.5vw, 4rem);
+  text-align: center;
+  margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
-
-h3{
-    font-family: "Ranchers",system-ui;
-    font-size: 2.5rem;
-    color:rgb(48, 194, 239) ;
-    text-align: center;
+h3 {
+  font-size: clamp(1.4rem, 2.5vw, 3rem);
+  text-align: center;
 }
+
+h5 {
+  font-size: clamp(1.1rem, 2vw, 1.8rem);
+}
+
+p {
+  font-size: clamp(0.95rem, 1.5vw, 1.4rem);
+}
+	
 
 main {
 	display: grid;
@@ -116,17 +127,31 @@ main {
     align-content: center;
 }
 
-.card{
-    display: grid;
-    flex-direction: column;
-  gap: 1rem;
+.card {
+  display: flex;
+  flex-direction: column;
   border-radius: 1em;
-padding: 1.5rem;
-margin: auto ;
-text-align: center;
-background-color: wheat;
-align-items: center;
+  overflow: hidden;
+  background-color: wheat;
+  text-align: center;
+
+  /* Smooth hover lift */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Card image: always fills width, fixed height,
+   never stretches */
+.card-img-top {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
 
 .card-img-top{
     .card-img-top {
@@ -159,34 +184,20 @@ align-items: center;
     height: auto;   
 }
 
-h5{
-    font-family: "Ranchers",system-ui;
-    font-size: 1.8rem;
-    color:rgb(48, 194, 239) ;
-    text-align:center;}
-
-p {
-    font-family: "Ranchers",system-ui;
-    font-size: 1.2rem;
-    color:rgb(48, 194, 239);
-    text-align: center;
-}
 
 
 
 .carousel {
-  width: 40rem;
-  max-width: 100%;
+  width: min(40rem, 100%);
   margin: 0 auto 3rem auto;
 }
- 
+
 .carousel-inner {
-  height: 43rem;
-  background-size: contain;
-  background-repeat: no-repeat;
+  height: 36rem;
 }
- 
+
 .carousel-inner img {
+  width: 100%;
   height: 100%;
   object-fit: cover;
 }
@@ -194,22 +205,20 @@ p {
 
 .location-section {
   text-align: center;
-  margin-top: 5rem;
+  margin-top: 4rem;
   margin-bottom: 3rem;
-}
- 
-.location-section h3 {
-  margin-bottom: 2rem;
-}
- 
-.location-section h2 {
-  margin-bottom: 1.5rem;
-}
- 
-.location-section h5 {
-  margin-bottom: 2rem;
+  padding-inline: 1rem;
 }
 
+.location-section img {
+  display: block;
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  margin: 2rem auto 0 auto;
+  border-radius: 1em;
+  object-fit: cover;
+}
 .order-btn-wrapper {
   text-align: center;
   margin: 4rem auto;
@@ -274,29 +283,227 @@ p {
    
 
 
+.cards {
+  display: grid;
 
+  /* Container query context so child cards can
+     respond to their own container width */
+  container: cards / inline-size;
 
-@media (min-width: 600px) and (max-width: 900px) {
+  /* auto-fill: creates as many columns as fit.
+     minmax(260px, 1fr): each column is min 260px,
+     max 1fr. Results:
+       < 480px  → 1 column
+       480-780px → 2 columns
+       780px-1040px → 3 columns
+       > 1040px → 4 columns
+       > 1300px → 5 columns (TV)            */
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+
+  gap: 2rem;
+  padding: 1rem;
+  margin-inline: auto;
+  width: 100%;
+}
+
+/* TV screens: slightly larger minimum card width
+   so cards don't stretch too wide */
+@media (min-width: 1440px) {
   .cards {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2.5rem;
+    padding: 1.5rem;
   }
 }
 
-@container (width > 45ch) {
-
-	.card{
-		grid-template-columns:
-			auto minmax(25ch, 1fr);
-	}
-	.card h5 {grid-column: 1 / -1; }
-} 
-
-
-	@container cards (min-width: 45ch) {
-		.card {
-    text-align: center;
-		} 
+/* Very large TVs: cap at 6 columns */
+@media (min-width: 1920px) {
+  .cards {
+    grid-template-columns: repeat(6, 1fr);
+  }
 }
+
+
+/* Tablet and up: taller images */
+@media (min-width: 768px) {
+  .card-img-top {
+    height: 220px;
+  }
+}
+
+/* TV: even taller */
+@media (min-width: 1440px) {
+  .card-img-top {
+    height: 260px;
+  }
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1.25rem;
+  flex: 1; /* makes all cards equal height in a row */
+}
+
+/* Responsive card title using container query units
+   so it scales relative to the card's own width */
+.card h5 {
+  font-size: clamp(1.1rem, 5cqi, 1.8rem);
+}
+
+.card p {
+  font-size: clamp(0.9rem, 3cqi, 1.2rem);
+}
+
+/* ================================================
+   5. CONTAINER QUERIES
+   Cards respond to their container width,
+   not the viewport — works correctly even inside
+   sidebars or nested grids.
+   ================================================ */
+
+/* When the cards container is wider than 500px,
+   allow card content to go side-by-side */
+@container cards (min-width: 500px) {
+  .card {
+    text-align: center;
+  }
+}
+
+/* When the cards container is very wide (TV),
+   allow a horizontal card layout */
+@container cards (min-width: 900px) {
+  .card.card-horizontal {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .card.card-horizontal .card-img-top {
+    width: 200px;
+    height: 100%;
+    flex-shrink: 0;
+  }
+}
+
+/* ================================================
+   6. CONTACT GRID (contact.html)
+   Single centered card layout
+   ================================================ */
+.contact-grid {
+  display: grid;
+  grid-template-columns: minmax(300px, 900px);
+  gap: 2rem;
+  margin: 2rem auto 4rem auto;
+  padding-inline: 1rem;
+}
+
+.card-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 900px;
+  background-color: bisque;
+  border-radius: 1em;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.card-contact .card-img-top {
+  height: 200px;
+}
+
+/* Tablet: wider contact card */
+@media (min-width: 768px) {
+  .card-contact .card-img-top {
+    height: 240px;
+  }
+}
+
+/* TV: contact card stays capped, doesn't stretch */
+@media (min-width: 1440px) {
+  .contact-grid {
+    grid-template-columns: minmax(300px, 1000px);
+    margin-top: 3rem;
+  }
+}
+
+
+/* Tablet: taller carousel */
+@media (min-width: 768px) {
+  .carousel-inner {
+    height: 42rem;
+  }
+}
+
+/* TV: wider and taller carousel */
+@media (min-width: 1440px) {
+  .carousel {
+    width: min(60rem, 100%);
+  }
+
+  .carousel-inner {
+    height: 52rem;
+  }
+}
+
+/* ================================================
+   8. LOCATION SECTION
+   ================================================ */
+.location-section {
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+  padding-inline: 1rem;
+}
+
+.location-section img {
+  display: block;
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  margin: 2rem auto 0 auto;
+  border-radius: 1em;
+  object-fit: cover;
+}
+
+@media (min-width: 1440px) {
+  .location-section img {
+    max-width: 900px;
+  }
+}
+
+/* ================================================
+   9. ORDER BUTTON WRAPPER
+   ================================================ */
+.order-btn-wrapper {
+  text-align: center;
+  margin: 3rem auto 5rem auto;
+}
+
+
+@media (min-width: 1440px) {
+  .columns {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+
+/* TV: slightly larger nav text */
+@media (min-width: 1440px) {
+  .nav-link,
+  .nav-item {
+    font-size: 1.6rem;
+  }
+
+  .dropdown-item {
+    font-size: 1.5rem;
+  }
+}
+
+
 	
 
 
