@@ -208,33 +208,7 @@ main {
   }
 }
 
-/* ================================================
-   6. CONTACT GRID (contact.html)
-   Single centered card layout
-   ================================================ */
-.contact-grid {
-  display: grid;
-  grid-template-columns: minmax(300px, 900px);
-  gap: 2rem;
-  margin: 2rem auto 4rem auto;
-  padding-inline: 1rem;
-}
 
-.card-contact {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  max-width: 900px;
-  background-color: bisque;
-  border-radius: 1em;
-  margin: 0 auto;
-  overflow: hidden;
-}
-
-.card-contact .card-img-top {
-  height: 200px;
-}
 
 /* Tablet: wider contact card */
 @media (min-width: 768px) {
