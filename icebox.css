@@ -155,6 +155,14 @@ main {
 
   /* Smooth hover lift */
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  padding: 1.5rem;
+
+  /* margin: 0 auto centers a block element */
+  margin: 0 auto;
+
+  /* never set height — let content decide */
+  width: 100%;
+  max-width: 500px;
 }
 
 .cards {
@@ -289,8 +297,7 @@ main {
 
    
    .button-glow::after {
-    pointer-events: none;
-    content: "";
+    pointer-events: auto;
     position: absolute;
     top: 120%;
     left: 0;
