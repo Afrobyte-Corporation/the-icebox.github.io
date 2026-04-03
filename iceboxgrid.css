@@ -6,12 +6,69 @@ padding: 0;
 body{ 
   width: 100%;
   height: 100%;
-  background: #00B4DB;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #05386b;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #5cdb95, #05386b);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #5cdb95, #05386b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.offcanvas-title{
+  font-family: "Ranchers", system-ui;
+  font-size: 1.8rem;
+  color:rgb(249, 208, 3);
+
 }
 
 
+.offcanvas-body{
+	 font-family: "Ranchers",system-ui;
+    font-size: var(--font-size-md);
+    color:rgb(249, 208, 3);
+  background: #00B4DB;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */}
+
+.offcanvas-header{
+	 font-family: "Ranchers",system-ui;
+    font-size: var(--font-size-lg);
+    color:rgb(249, 208, 3);
+    background: #00B4DB;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */}
+
+.nav-link,
+.nav-item {
+  font-family: "Ranchers", system-ui;
+  font-size: 1.4rem;
+  color:rgb(249, 208, 3) ;
+}
+.nav-item {
+	font-family: "Ranchers", system-ui;
+	font-size: 1.4rem;
+	  color:rgb(249, 208, 3) ;}
+.nav-link{
+	font-family: "Ranchers", system-ui;
+	font-size: 1.4rem;
+	  color:rgb(249, 208, 3) ;}
+
+.dropdown-item {
+  font-family: "Ranchers", system-ui;
+  font-size: 1.3rem;
+ color:rgb(249, 208, 3) ;}
+
+
+
+h1 {
+  font-family: "Ranchers", system-ui;
+  font-size: clamp(2.5rem, 5vw, 6rem);
+  text-align: center;
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+  color:rgb(5, 162, 240);
+}
+
+
+	
 
 /* ================================================
    ICEBOX FROZEN TREATS — SHARED RESPONSIVE GRID
@@ -171,11 +228,15 @@ main {
 /* Responsive card title using container query units
    so it scales relative to the card's own width */
 .card h5 {
+   font-family: "Ranchers", system-ui;
   font-size: clamp(1.1rem, 5cqi, 1.8rem);
+   color:rgb(5, 162, 240);
 }
 
 .card p {
   font-size: clamp(0.9rem, 3cqi, 1.2rem);
+  font-family: "Ranchers", system-ui;
+   color:rgb(5, 162, 240);
 }
 
 /* ================================================
