@@ -12,6 +12,12 @@ background: linear-gradient(to right, #5cdb95, #05386b); /* W3C, IE 10+/ Edge, F
 
 }
 
+.ranchers-regular {
+  font-family: "Ranchers", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .offcanvas-title{
   font-family: "Ranchers", system-ui;
   font-size: 1.8rem;
@@ -42,14 +48,7 @@ background: linear-gradient(to right, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, F
   font-size: 1.4rem;
   color:rgb(249, 208, 3) ;
 }
-.nav-item {
-	font-family: "Ranchers", system-ui;
-	font-size: 1.4rem;
-	  color:rgb(249, 208, 3) ;}
-.nav-link{
-	font-family: "Ranchers", system-ui;
-	font-size: 1.4rem;
-	  color:rgb(249, 208, 3) ;}
+
 
 .dropdown-item {
   font-family: "Ranchers", system-ui;
