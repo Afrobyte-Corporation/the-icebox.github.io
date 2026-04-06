@@ -19,6 +19,16 @@
  * 4. For production, use HTTPS — required for Apple Pay and Stripe.
  */
 
+<?php
+require_once __DIR__ . '/vendor/autoload.php';
+
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv->load();
+
+$stripeSecretKey      = $_ENV['STRIPE_SECRET_KEY'];
+$stripePublishableKey = $_ENV['STRIPE_PUBLISHABLE_KEY'];
+$stripeWebhookSecret  = $_ENV['STRIPE_WEBHOOK_SECRET'];
+
 session_start();
 
 // ─── Load Stripe ──────────────────────────────────────────────
