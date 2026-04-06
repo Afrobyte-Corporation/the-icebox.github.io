@@ -269,6 +269,7 @@ main {
   text-align: center;
   margin: 3rem auto 5rem auto;
   outline-color: transparent;
+  z-index: 10; 
 }
 
 /* From Uiverse.io by cssbuttons-io */ 
@@ -292,7 +293,8 @@ main {
     text-shadow: 0 0 .5em var(--glow-color);
     position: relative;
     transition: all 0.3s;
-    display: block;
+    display: inline-block;
+     z-index: 10;
     margin-left: auto;
     margin-right: auto;
  }
