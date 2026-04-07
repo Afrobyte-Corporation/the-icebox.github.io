@@ -19,16 +19,6 @@
  * 4. For production, use HTTPS — required for Apple Pay and Stripe.
  */
 
-<?php
-require_once __DIR__ . '/vendor/autoload.php';
-
-$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
-$dotenv->load();
-
-$stripeSecretKey      = $_ENV['STRIPE_SECRET_KEY'];
-$stripePublishableKey = $_ENV['STRIPE_PUBLISHABLE_KEY'];
-$stripeWebhookSecret  = $_ENV['STRIPE_WEBHOOK_SECRET'];
-
 session_start();
 
 // ─── Load Stripe ──────────────────────────────────────────────
@@ -46,41 +36,83 @@ $stripeWebhookSecret  = getenv('STRIPE_WEBHOOK_SECRET')  ?: 'whsec_YOUR_WEBHOOK_
 // In a real app, load these from a database.
 // Prices are in cents (USD): $3.50 = 350
 $products = [
-    'water_ice_sm' => [
-        'name'        => 'Water Ice — Small',
-        'description' => 'Classic Philly water ice, small cup',
-        'price'       => 350,
-        'image'       => 'waterice.jpg',
-    ],
-    'water_ice_lg' => [
-        'name'        => 'Water Ice — Large',
-        'description' => 'Classic Philly water ice, large cup',
-        'price'       => 550,
-        'image'       => 'waterice.jpg',
-    ],
-    'gelati'       => [
-        'name'        => 'Gelati',
-        'description' => 'Water ice layered with soft ice cream',
-        'price'       => 650,
-        'image'       => 'Gelati.jpg',
-    ],
-    'sundae'       => [
-        'name'        => 'Ice Cream Sundae',
-        'description' => 'Two scoops with your choice of toppings',
-        'price'       => 750,
-        'image'       => 'sundae.jpeg',
-    ],
-    'milkshake'    => [
-        'name'        => 'Milkshake',
-        'description' => 'Hand-spun milkshake, any flavor',
-        'price'       => 800,
-        'image'       => 'milkshake.jpg',
-    ],
-    'hot_fries'    => [
-        'name'        => 'French Fries',
-        'description' => 'Fresh-cut golden fries',
+
+    // ── Water Ice ──────────────────────────────
+    'waterice_red'    => [
+        'name'        => 'Water Ice — Cherry/Strawberry',
+        'description' => 'Classic Philly water ice, bright red & refreshing',
         'price'       => 450,
-        'image'       => 'fries.jpeg',
+        'image'       => 'waterice_red.png',
+        'category'    => 'Water Ice',
+    ],
+
+    // ── Gelati ─────────────────────────────────
+    'gelati_blue'     => [
+        'name'        => 'Gelati — Blue Raspberry',
+        'description' => 'Blue raspberry water ice layered with soft ice cream, topped with whipped cream & pearl sprinkles',
+        'price'       => 700,
+        'image'       => 'gelati_blue.png',
+        'category'    => 'Gelati',
+    ],
+    'gelati_sour'     => [
+        'name'        => 'Sour Gelati',
+        'description' => 'Sour red & blue water ice swirled with creamy vanilla ice cream',
+        'price'       => 700,
+        'image'       => 'gelati_sour.png',
+        'category'    => 'Gelati',
+    ],
+    'gelati_orange'   => [
+        'name'        => 'Gelati — Orange Cream',
+        'description' => 'Fresh orange water ice layered with smooth vanilla soft serve',
+        'price'       => 700,
+        'image'       => 'gelati_orange.png',
+        'category'    => 'Gelati',
+    ],
+
+    // ── Unique Desserts / Milkshakes ───────────
+    'sundae_applepie' => [
+        'name'        => 'Apple Pie Sundae',
+        'description' => 'Vanilla ice cream topped with cinnamon toast crunch, apple filling, caramel drizzle & a cinnamon stick',
+        'price'       => 950,
+        'image'       => 'sundae_applepie.png',
+        'category'    => 'Unique Desserts',
+    ],
+    'dessert_waffle'  => [
+        'name'        => 'Waffle Ice Cream Platter',
+        'description' => 'Fresh waffle topped with three scoops of ice cream, whipped cream & chocolate drizzle',
+        'price'       => 1100,
+        'image'       => 'dessert_waffle.png',
+        'category'    => 'Unique Desserts',
+    ],
+    'dessert_friedoreo' => [
+        'name'        => 'Fried Dough Sundae',
+        'description' => 'Golden fried dough topped with vanilla ice cream, whipped cream & chocolate drizzle',
+        'price'       => 1000,
+        'image'       => 'dessert_friedoreo.png',
+        'category'    => 'Unique Desserts',
+    ],
+    'dessert_crepe'   => [
+        'name'        => 'Ice Cream Crepe',
+        'description' => 'Crispy crepe filled with three scoops of ice cream, strawberry drizzle & rainbow sprinkles',
+        'price'       => 1050,
+        'image'       => 'dessert_crepe.png',
+        'category'    => 'Unique Desserts',
+    ],
+
+    // ── Hot Food ───────────────────────────────
+    'hotfood_frieddough' => [
+        'name'        => 'Fried Dough',
+        'description' => 'Boardwalk-style fried dough dusted with powdered sugar, served with dipping sauce',
+        'price'       => 600,
+        'image'       => 'hotfood_frieddough.png',
+        'category'    => 'Hot Food',
+    ],
+    'hotfood_pizza'   => [
+        'name'        => 'Pizza Bread',
+        'description' => 'Toasted bread loaded with marinara, melted mozzarella & pepperoni',
+        'price'       => 700,
+        'image'       => 'hotfood_pizza.png',
+        'category'    => 'Hot Food',
     ],
 ];
 
