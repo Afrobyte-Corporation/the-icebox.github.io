@@ -215,36 +215,7 @@ main {
   font-size: clamp(0.9rem, 3cqi, 1.2rem);
 }
  
-/* ================================================
-   5. CONTAINER QUERIES
-   Cards respond to their container width,
-   not the viewport — works correctly even inside
-   sidebars or nested grids.
-   ================================================ */
- 
-/* When the cards container is wider than 500px,
-   allow card content to go side-by-side */
-@container cards (min-width: 500px) {
-  .card {
-    text-align: center;
-  }
-}
- 
-/* When the cards container is very wide (TV),
-   allow a horizontal card layout */
-@container cards (min-width: 900px) {
-  .card.card-horizontal {
-    flex-direction: row;
-    text-align: left;
-  }
- 
-  .card.card-horizontal .card-img-top {
-    width: 200px;
-    height: 100%;
-    flex-shrink: 0;
-  }
-}
- 
+
 
  
 /* ================================================
