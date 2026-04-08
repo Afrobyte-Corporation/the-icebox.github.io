@@ -39,79 +39,95 @@ $products = [
 
     // ── Water Ice ──────────────────────────────
     'waterice_red'    => [
-        'name'        => 'Water Ice — Cherry/Strawberry',
+        'name'        => 'Water Ice — Cherry/Strawberry Lemonade',
+        'description' => 'Classic Philly water ice,',
+        'price'       => 450,
+        'image'       => 'strawberryndcherry.png',
+        'category'    => 'Water Ice',
+    ],
+
+      'waterice_red'    => [
+        'name'        => 'Water Ice — Barbie',
         'description' => 'Classic Philly water ice, bright red & refreshing',
         'price'       => 450,
-        'image'       => 'waterice_red.png',
+        'image'       => 'brbie.jpeg',
+        'category'    => 'Water Ice',
+    ],
+
+    'waterice_red'    => [
+        'name'        => 'Water Ice — Rainbow',
+        'description' => 'Classic Philly water ice, bright red & refreshing',
+        'price'       => 450,
+        'image'       => 'rainbowwi.png',
         'category'    => 'Water Ice',
     ],
 
     // ── Gelati ─────────────────────────────────
     'gelati_blue'     => [
-        'name'        => 'Gelati — Blue Raspberry',
+        'name'        => 'Gelati — Cotton Candy w/ sprinkkles',
         'description' => 'Blue raspberry water ice layered with soft ice cream, topped with whipped cream & pearl sprinkles',
         'price'       => 700,
-        'image'       => 'gelati_blue.png',
+        'image'       => 'cottoncandygelatiwjimmys.png',
         'category'    => 'Gelati',
     ],
     'gelati_sour'     => [
-        'name'        => 'Sour Gelati',
+        'name'        => 'Gelati - Sour rainbow',
         'description' => 'Sour red & blue water ice swirled with creamy vanilla ice cream',
         'price'       => 700,
         'image'       => 'gelati_sour.png',
         'category'    => 'Gelati',
     ],
     'gelati_orange'   => [
-        'name'        => 'Gelati — Orange Cream',
-        'description' => 'Fresh orange water ice layered with smooth vanilla soft serve',
+        'name'        => 'Gelati — Mango',
+        'description' => 'Fresh Mango water ice layered with smooth vanilla soft serve',
         'price'       => 700,
-        'image'       => 'gelati_orange.png',
+        'image'       => 'mangogelati.png',
         'category'    => 'Gelati',
     ],
 
     // ── Unique Desserts / Milkshakes ───────────
     'sundae_applepie' => [
-        'name'        => 'Apple Pie Sundae',
-        'description' => 'Vanilla ice cream topped with cinnamon toast crunch, apple filling, caramel drizzle & a cinnamon stick',
+        'name'        => ' Cinnamon toast Sundae',
+        'description' => 'Vanilla ice cream topped with cinnamon toast crunch, & caramel drizzle',
         'price'       => 950,
-        'image'       => 'sundae_applepie.png',
+        'image'       => 'cintstsun.png',
         'category'    => 'Unique Desserts',
     ],
     'dessert_waffle'  => [
-        'name'        => 'Waffle Ice Cream Platter',
-        'description' => 'Fresh waffle topped with three scoops of ice cream, whipped cream & chocolate drizzle',
+        'name'        => 'Create Your Own Waffle',
+        'description' => 'A fresh waffle loaded with three scoops of ice cream(your choice), whipped cream, chocolate drizzle & toppings',
         'price'       => 1100,
-        'image'       => 'dessert_waffle.png',
+        'image'       => 'wafflesun.png',
         'category'    => 'Unique Desserts',
     ],
     'dessert_friedoreo' => [
-        'name'        => 'Fried Dough Sundae',
-        'description' => 'Golden fried dough topped with vanilla ice cream, whipped cream & chocolate drizzle',
+        'name'        => 'Fried Oreo Sundae',
+        'description' => 'Fried Oreos dusted with powdered sugar, topped with vanilla ice cream, whipped cream & chocolate drizzle',
         'price'       => 1000,
-        'image'       => 'dessert_friedoreo.png',
+        'image'       => 'oreosun.png',
         'category'    => 'Unique Desserts',
     ],
     'dessert_crepe'   => [
         'name'        => 'Ice Cream Crepe',
         'description' => 'Crispy crepe filled with three scoops of ice cream, strawberry drizzle & rainbow sprinkles',
         'price'       => 1050,
-        'image'       => 'dessert_crepe.png',
+        'image'       => 'icecrepe.jpeg',
         'category'    => 'Unique Desserts',
     ],
 
     // ── Hot Food ───────────────────────────────
     'hotfood_frieddough' => [
-        'name'        => 'Fried Dough',
-        'description' => 'Boardwalk-style fried dough dusted with powdered sugar, served with dipping sauce',
+        'name'        => 'Fried Oreos',
+        'description' => 'Boardwalk-style fried oroes dusted with powdered sugar, served with dipping sauce',
         'price'       => 600,
-        'image'       => 'hotfood_frieddough.png',
+        'image'       => 'friedoreo.png',
         'category'    => 'Hot Food',
     ],
     'hotfood_pizza'   => [
-        'name'        => 'Pizza Bread',
-        'description' => 'Toasted bread loaded with marinara, melted mozzarella & pepperoni',
+        'name'        => 'Turkey Pepperonni Pizza Pretzel',
+        'description' => 'Toasted Pretzel loaded with marinara, melted mozzarella & turkey pepperoni',
         'price'       => 700,
-        'image'       => 'hotfood_pizza.png',
+        'image'       => 'pizzapretzel.png',
         'category'    => 'Hot Food',
     ],
 ];
