@@ -625,7 +625,9 @@ $view        = $_GET['view'] ?? 'shop'; // shop | cart | checkout
 
 <!-- ── Navigation ── -->
 <nav class="site-nav">
-  <a href="index.html" class="logo">🧊 The IceBox</a>
+  <a href="index.html" class="logo">
+    <img src="iceboxbg.jpg" alt="">
+  </a>
   <div class="nav-links">
     <a href="checkout.php?view=shop">Menu</a>
     <a href="checkout.php?view=cart" class="cart-badge">
