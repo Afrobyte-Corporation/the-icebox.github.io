@@ -123,49 +123,268 @@
 
 
 
-
-
-
-<div class= "wrapper">
-    <main>
-    <section class="cards">
  
-        <article class="card">
-    <img src="fries.jpeg" class="card-img-top" >
-  
-      <h5>Hot Food</h5>
-      <p>We are the home of frozen treats, but that doesn't mean we won't satisfy your hunger.</p>
-  </article>
-        <br>
-  <article class="card">
-    <img src="sundae2.jpg" class="card-img-top" alt="">
-     
-      <h5 >Sundaes</h5>
-      
-      <p>Try our amazing sundaes, we have all the toppings your heart desires.</p>
-  </article>
-        <br>
-  <article class="card">
-    <img src="waffle.jpeg" class="card-img-top" alt="" >
-    
-      <h5>Unique Desserts</h5>
-      
-      <p>We offer some of the most unique desserts, always providing something new.</p>
-  </article>
-  <br>
-        <article class="card"> 
-      <img src="Snacks.jpg" class="card-img-top" alt="" >
-      
-      <h5>Snacks</h5>
-      
-      <p >Try some of our delicious snacks.</p>
-    </article>
-    </section>
-</main>
+<div class="wrapper">
+  <main>
+ 
+    <!-- ── Category Filter Tabs ── -->
+    <div class="category-tabs" id="categoryTabs">
+      <button class="cat-tab active" onclick="filterCards('all', this)">All</button>
+      <button class="cat-tab" onclick="filterCards('water-ice', this)">Water Ice</button>
+      <button class="cat-tab" onclick="filterCards('gelati', this)">Gelati</button>
+      <button class="cat-tab" onclick="filterCards('ice-cream', this)">Ice Cream</button>
+      <button class="cat-tab" onclick="filterCards('sundaes', this)">Sundaes</button>
+      <button class="cat-tab" onclick="filterCards('unique-desserts', this)">Unique Desserts</button>
+      <button class="cat-tab" onclick="filterCards('milkshakes', this)">Milkshakes</button>
+      <button class="cat-tab" onclick="filterCards('hot-food', this)">Hot Food</button>
+      <button class="cat-tab" onclick="filterCards('snacks', this)">Snacks</button>
+      <button class="cat-tab" onclick="filterCards('pretzels', this)">Pretzels</button>
     </div>
-
+ 
+    <section class="cards" id="cardGrid">
+ 
+      <!-- WATER ICE -->
+      <article class="card" data-category="water-ice">
+        <img src="strawberryndcherry.png" class="card-img-top" alt="Water ice in cups"
+             onerror="this.src='https://placehold.co/400x200/00B4DB/white?text=Water+Ice'">
+        <div class="card-body">
+          <h5>Water Ice</h5>
+          <p>Classic Philly style water ice in 15+ flavors. Kids $1.50 · Sm $2.50 · Med $4 · Lg $6 · XL $9</p>
+          <a href="waterice.html" class="card-link">See Flavors →</a>
+        </div>
+      </article>
+ 
+      <!-- GELATI -->
+      <article class="card" data-category="gelati">
+        <img src="mangogelati.png" class="card-img-top" alt="Blue raspberry gelati"
+             onerror="this.src='https://placehold.co/400x200/00B4DB/white?text=Gelati'">
+        <div class="card-body">
+          <h5>Gelati</h5>
+          <p>Water ice layered with soft serve ice cream. Sm $4.50 · Med $5 · Lg $6.50 · XL $10</p>
+          <a href="Gelati.html" class="card-link">See Options →</a>
+        </div>
+      </article>
+ 
+      <!-- SOFT SERVE ICE CREAM -->
+      <article class="card" data-category="ice-cream">
+        <img src=gbicecream.png" class="card-img-top" alt="Soft serve ice cream"
+             onerror="this.src='https://placehold.co/400x200/00B4DB/white?text=Ice+Cream'">
+        <div class="card-body">
+          <h5>Soft Serve Ice Cream</h5>
+          <p>11 flavors including Vanilla, Chocolate, Birthday Cake & Sugar Free Vanilla. Sm $4 · Med $5 · Lg $7</p>
+          <a href="checkout.php?view=shop&cat=Ice+Cream" class="card-link">Order Now →</a>
+        </div>
+      </article>
+ 
+      <!-- HAND DIPPED -->
+      <article class="card" data-category="ice-cream">
+        <img src="sundae2.jpg" class="card-img-top" alt="Hand dipped ice cream scoops"
+             onerror="this.src='https://placehold.co/400x200/00B4DB/white?text=Hand+Dipped'">
+        <div class="card-body">
+          <h5>Hand Dipped Ice Cream</h5>
+          <p>Scooped by hand in your favorite flavor. Small $4 · Medium $5 · Large $7</p>
+          <a href="checkout.php?view=shop&cat=Ice+Cream" class="card-link">Order Now →</a>
+        </div>
+      </article>
+ 
+      <!-- FROZEN CUP -->
+      <article class="card" data-category="ice-cream">
+        <img src="sundae2.jpg" class="card-img-top" alt="IceBox frozen cup"
+             onerror="this.src='https://placehold.co/400x200/00B4DB/white?text=Frozen+Cup'">
+        <div class="card-body">
+          <h5>The IceBox Frozen Cup</h5>
+          <p>Vanilla ice cream blended with your choice of toppings. $5.00</p>
+          <a href="checkout.php?view=shop&cat=Ice+Cream" class="card-link">Order Now →</a>
+        </div>
+      </article>
+ 
+      <!-- BROWNIE SUNDAE -->
+      <article class="card" data-category="sundaes">
+        <img src="sundae_applepie.png" class="card-img-top" alt="Brownie sundae"
+             onerror="this.src='https://placehold.co/400x200/00B4DB/white?text=Brownie+Sundae'">
+        <div class="card-body">
+          <h5>Brownie Sundae</h5>
+          <p>Vanilla ice cream with hot fudge or caramel, whipped cream & a cherry on top. $7.00</p>
+          <a href="checkout.php?view=shop&cat=Signature+Sundaes" class="card-link">Order Now →</a>
+        </div>
+      </article>
+ 
+ 
+      <!-- CINNAMON TOAST SUNDAE -->
+      <article class="card" data-category="sundaes">
+        <img src="cintstsun.png" class="card-img-top" alt="Cinnamon toast donut sundae"
+             onerror="this.src='https://placehold.co/400x200/00B4DB/white?text=Cinnamon+Sundae'">
+        <div class="card-body">
+          <h5>Cinnamon Toast Donut Sundae</h5>
+          <p>Vanilla ice cream topped with Cinnamon Toast Crunch & caramel drizzle. $7.00</p>
+          <a href="checkout.php?view=shop&cat=Signature+Sundaes" class="card-link">Order Now →</a>
+        </div>
+      </article>
+ 
+      <!-- FRUITY TOOTY SUNDAE -->
+      <article class="card" data-category="sundaes">
+        <img src="dessert_friedoreo.png" class="card-img-top" alt="Fruity tooty donut sundae"
+             onerror="this.src='https://placehold.co/400x200/00B4DB/white?text=Fruity+Sundae'">
+        <div class="card-body">
+          <h5>Fruity Tooty Donut Sundae</h5>
+          <p>Vanilla ice cream topped with Fruit Loops & strawberry syrup drizzle. $7.00</p>
+          <a href="checkout.php?view=shop&cat=Signature+Sundaes" class="card-link">Order Now →</a>
+        </div>
+      </article>
+ 
+      <!-- UNIQUE DESSERTS -->
+      <article class="card" data-category="unique-desserts">
+        <img src="wafflesun.png" class="card-img-top" alt="Create your own waffle"
+             onerror="this.src='https://placehold.co/400x200/00B4DB/white?text=Waffle'">
+        <div class="card-body">
+          <h5>Create Your Own Waffle</h5>
+          <p>Fresh waffle with three scoops of ice cream, whipped cream & your choice of toppings.</p>
+          <a href="Milkshakes.html" class="card-link">See Desserts →</a>
+        </div>
+      </article>
+ 
+      <article class="card" data-category="unique-desserts">
+        <img src="oreosun.png" class="card-img-top" alt="Fried oreo sundae"
+             onerror="this.src='https://placehold.co/400x200/00B4DB/white?text=Fried+Oreo'">
+        <div class="card-body">
+          <h5>Fried Oreo Sundae</h5>
+          <p>Golden fried dough dusted with powdered sugar, topped with ice cream & chocolate drizzle.</p>
+          <a href="Milkshakes.html" class="card-link">See Desserts →</a>
+        </div>
+      </article>
+ 
+      <article class="card" data-category="unique-desserts">
+        <img src="icecrepe.jpeg" class="card-img-top" alt="Ice cream crepe"
+             onerror="this.src='https://placehold.co/400x200/00B4DB/white?text=Crepe'">
+        <div class="card-body">
+          <h5>Ice Cream Crepe</h5>
+          <p>Crispy crepe filled with three scoops of ice cream, strawberry drizzle & rainbow sprinkles.</p>
+          <a href="Milkshakes.html" class="card-link">See Desserts →</a>
+        </div>
+      </article>
+ 
+      <!-- MILKSHAKES -->
+      <article class="card" data-category="milkshakes">
+        <img src="sundae2.jpg" class="card-img-top" alt="Milkshake"
+             onerror="this.src='https://placehold.co/400x200/00B4DB/white?text=Milkshake'">
+        <div class="card-body">
+          <h5>Milkshakes</h5>
+          <p>Hand-spun milkshakes in Chocolate, Vanilla, Strawberry & Oreo. Small $5 · Large $8</p>
+          <a href="checkout.php?view=shop&cat=Milkshakes" class="card-link">Order Now →</a>
+        </div>
+      </article>
+ 
+      <!-- HOT FOOD -->
+      <article class="card" data-category="hot-food">
+        <img src="hotfood_frieddough.png" class="card-img-top" alt="Fried dough"
+             onerror="this.src='https://placehold.co/400x200/00B4DB/white?text=Fried+Dough'">
+        <div class="card-body">
+          <h5>Fried Dough</h5>
+          <p>Boardwalk-style fried dough dusted with powdered sugar & creamy dipping sauce.</p>
+          <a href="hot-food.html" class="card-link">See Hot Food →</a>
+        </div>
+      </article>
+ 
+      <article class="card" data-category="hot-food">
+        <img src="hotfood_pizza.png" class="card-img-top" alt="Pizza bread"
+             onerror="this.src='https://placehold.co/400x200/00B4DB/white?text=Pizza'">
+        <div class="card-body">
+          <h5>Pizza Bread</h5>
+          <p>Toasted bread loaded with marinara, melted mozzarella & pepperoni. $4.00</p>
+          <a href="hot-food.html" class="card-link">See Hot Food →</a>
+        </div>
+      </article>
+ 
+      <!-- SNACKS -->
+      <article class="card" data-category="snacks">
+        <img src="fries.jpeg" class="card-img-top" alt="Snacks"
+             onerror="this.src='https://placehold.co/400x200/00B4DB/white?text=Snacks'">
+        <div class="card-body">
+          <h5>Icebox Snacks</h5>
+          <p>Hot Dogs $2.50 · Hot Sausage $3.50 · Funnel Cake Fries $6.00</p>
+          <a href="checkout.php?view=shop&cat=Snacks" class="card-link">Order Now →</a>
+        </div>
+      </article>
+ 
+      <!-- PRETZELS -->
+      <article class="card" data-category="pretzels">
+        <img src="fries.jpeg" class="card-img-top" alt="Pretzels"
+             onerror="this.src='https://placehold.co/400x200/00B4DB/white?text=Pretzels'">
+        <div class="card-body">
+          <h5>Pretzels</h5>
+          <p>Plain $1.50 · Cheese $2.00 · Pizza Pretzel $3.50 · Beef Pepperoni Pizza $4.00</p>
+          <a href="checkout.php?view=shop&cat=Pretzels" class="card-link">Order Now →</a>
+        </div>
+      </article>
+ 
+    </section>
+  </main>
+</div>
+ 
+<style>
+  /* ── Category Tabs ── */
+  .category-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+    margin: 1.5rem auto 1.5rem auto;
+    max-width: 1200px;
+    padding: 0 1rem;
+  }
+ 
+  .cat-tab {
+    font-family: "Ranchers", system-ui;
+    font-size: 0.95rem;
+    padding: 0.4em 1.1em;
+    border-radius: 2em;
+    background: rgba(255,255,255,0.15);
+    color: rgb(48,194,239);
+    border: 1px solid rgba(48,194,239,0.4);
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+  }
+ 
+  .cat-tab:hover  { background: rgba(255,255,255,0.25); }
+  .cat-tab.active { background: rgb(48,194,239); color: #004a6e; border-color: rgb(48,194,239); }
+ 
+  /* ── Card link ── */
+  .card-link {
+    font-family: "Ranchers", system-ui;
+    font-size: 1rem;
+    color: rgb(0,131,176);
+    text-decoration: none;
+    margin-top: auto;
+    display: inline-block;
+  }
+ 
+  .card-link:hover { text-decoration: underline; }
+ 
+  /* ── Hidden cards ── */
+  .card.hidden {
+    display: none;
+  }
+</style>
+ 
+<script>
+  function filterCards(category, clickedBtn) {
+    // Update active tab
+    document.querySelectorAll('.cat-tab').forEach(btn => btn.classList.remove('active'));
+    clickedBtn.classList.add('active');
+ 
+    // Show/hide cards
+    document.querySelectorAll('#cardGrid .card').forEach(card => {
+      if (category === 'all' || card.dataset.category === category) {
+        card.classList.remove('hidden');
+      } else {
+        card.classList.add('hidden');
+      }
+    });
+  }
+</script>
+ 
     
-
+ 
   
   <div class="order-btn-wrapper">
    <!-- Replace any order buttons with this -->
@@ -176,6 +395,9 @@
   </div>
     
   </div>
+
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
     

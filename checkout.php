@@ -40,7 +40,7 @@ $products = [
     // ── Water Ice ──────────────────────────────
     'waterice_red'    => [
         'name'        => 'Water Ice — Cherry/Strawberry Lemonade',
-        'description' => 'Classic Philly water ice,',
+        'description' => 'Cherry or strawberry lemonade water ice that tastes sensational on a nice spring/summer day.',
         'price'       => 450,
         'image'       => 'strawberryndcherry.png',
         'category'    => 'Water Ice',
@@ -48,7 +48,7 @@ $products = [
 
       'waterice_red'    => [
         'name'        => 'Water Ice — Barbie',
-        'description' => 'Classic Philly water ice, bright red & refreshing',
+        'description' => 'Barbie inspired cotton candy water ice topped with nerd ropes.',
         'price'       => 450,
         'image'       => 'brbie.jpeg',
         'category'    => 'Water Ice',
@@ -56,7 +56,7 @@ $products = [
 
     'waterice_red'    => [
         'name'        => 'Water Ice — Rainbow',
-        'description' => 'Classic Philly water ice, bright red & refreshing',
+        'description' => ' Fantastic water ice that delights your taste buds with various flavors.',
         'price'       => 450,
         'image'       => 'rainbowwi.png',
         'category'    => 'Water Ice',
@@ -65,16 +65,16 @@ $products = [
     // ── Gelati ─────────────────────────────────
     'gelati_blue'     => [
         'name'        => 'Gelati — Cotton Candy w/ sprinkkles',
-        'description' => 'Blue raspberry water ice layered with soft ice cream, topped with whipped cream & pearl sprinkles',
+        'description' => 'Blue cotton candy water ice layered with soft ice cream, topped with whipped cream & pearl sprinkles.',
         'price'       => 700,
         'image'       => 'cottoncandygelatiwjimmys.png',
         'category'    => 'Gelati',
     ],
     'gelati_sour'     => [
         'name'        => 'Gelati - Sour rainbow',
-        'description' => 'Sour red & blue water ice swirled with creamy vanilla ice cream',
+        'description' => 'Sour rainbow water ice swirled with creamy vanilla ice cream',
         'price'       => 700,
-        'image'       => 'gelati_sour.png',
+        'image'       => 'sourgelati.png',
         'category'    => 'Gelati',
     ],
     'gelati_orange'   => [
