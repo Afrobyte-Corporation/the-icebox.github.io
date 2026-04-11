@@ -35,101 +35,406 @@ $stripeWebhookSecret  = getenv('STRIPE_WEBHOOK_SECRET')  ?: 'whsec_YOUR_WEBHOOK_
 // ─── Products ─────────────────────────────────────────────────
 // In a real app, load these from a database.
 // Prices are in cents (USD): $3.50 = 350
+// ─────────────────────────────────────────────────────────────
+// AVAILABLE FLAVORS (shown in descriptions)
+// ─────────────────────────────────────────────────────────────
+// ICE CREAM FLAVORS (11):
+//   Vanilla · Strawberry · Chocolate · Cookies & Cream
+//   Mint Chocolate Chip · Butter Pecan · Coffee
+//   Strawberry Cheesecake · Birthday Cake
+//   Black Sweet Cherry · Sugar Free Vanilla
+//
+// WATER ICE FLAVORS (15):
+//   Mango · Lemon · Cherry · Blueberry · Pineapple
+//   Candy Fish · Watermelon · Pina Colada · Root Beer · Cotton Candy
+//   Tropical Rainbow · Blue Hawaiian · Sour Rainbow
+//   Strawberry Lemonade · Sugar Free Cherry
+//
+// MILKSHAKE FLAVORS (4):
+//   Chocolate · Vanilla · Strawberry · Oreo
+// ─────────────────────────────────────────────────────────────
+
+$iceCreamFlavors = 'Flavors: Vanilla, Strawberry, Chocolate, Cookies & Cream, Mint Chocolate Chip, Butter Pecan, Coffee, Strawberry Cheesecake, Birthday Cake, Black Sweet Cherry, Sugar Free Vanilla.';
+$waterIceFlavors = 'Flavors: Mango, Lemon, Cherry, Blueberry, Pineapple, Candy Fish, Watermelon, Pina Colada, Root Beer, Cotton Candy, Tropical Rainbow, Blue Hawaiian, Sour Rainbow, Strawberry Lemonade, Sugar Free Cherry.';
+$milkshakeFlavors = 'Flavors: Chocolate, Vanilla, Strawberry, Oreo.';
+
 $products = [
 
-    // ── Water Ice ──────────────────────────────
-    'waterice_red'    => [
-        'name'        => 'Water Ice — Cherry/Strawberry Lemonade',
-        'description' => 'Cherry or strawberry lemonade water ice that tastes sensational on a nice spring/summer day.',
-        'price'       => 450,
-        'image'       => 'strawberryndcherry.png',
+    // ══════════════════════════════════════════════════════════
+    // WATER ICE
+    // Kids $1.50 · Small $2.50 · Medium $4.00 · Large $6.00 · X-Large $9.00
+    // ══════════════════════════════════════════════════════════
+    'waterice_kids' => [
+        'name'        => 'Water Ice — Kids',
+        'description' => "Kids size water ice cup. $waterIceFlavors",
+        'price'       => 150,
+        'image'       => 'waterice_red.png',
         'category'    => 'Water Ice',
+        'size'        => 'Kids',
     ],
-
-      'waterice_red'    => [
-        'name'        => 'Water Ice — Barbie',
-        'description' => 'Barbie inspired cotton candy water ice topped with nerd ropes.',
-        'price'       => 450,
-        'image'       => 'brbie.jpeg',
+    'waterice_sm' => [
+        'name'        => 'Water Ice — Small',
+        'description' => "Small water ice cup. $waterIceFlavors",
+        'price'       => 250,
+        'image'       => 'waterice_red.png',
         'category'    => 'Water Ice',
+        'size'        => 'Small',
     ],
-
-    'waterice_red'    => [
-        'name'        => 'Water Ice — Rainbow',
-        'description' => ' Fantastic water ice that delights your taste buds with various flavors.',
-        'price'       => 450,
-        'image'       => 'rainbowwi.png',
+    'waterice_md' => [
+        'name'        => 'Water Ice — Medium',
+        'description' => "Medium water ice cup. $waterIceFlavors",
+        'price'       => 400,
+        'image'       => 'waterice_red.png',
         'category'    => 'Water Ice',
+        'size'        => 'Medium',
+    ],
+    'waterice_lg' => [
+        'name'        => 'Water Ice — Large',
+        'description' => "Large water ice cup. $waterIceFlavors",
+        'price'       => 600,
+        'image'       => 'waterice_red.png',
+        'category'    => 'Water Ice',
+        'size'        => 'Large',
+    ],
+    'waterice_xl' => [
+        'name'        => 'Water Ice — X-Large',
+        'description' => "X-Large water ice cup. $waterIceFlavors",
+        'price'       => 900,
+        'image'       => 'waterice_red.png',
+        'category'    => 'Water Ice',
+        'size'        => 'X-Large',
     ],
 
-    // ── Gelati ─────────────────────────────────
-    'gelati_blue'     => [
-        'name'        => 'Gelati — Cotton Candy w/ sprinkkles',
-        'description' => 'Blue cotton candy water ice layered with soft ice cream, topped with whipped cream & pearl sprinkles.',
-        'price'       => 700,
-        'image'       => 'cottoncandygelatiwjimmys.png',
+    // ══════════════════════════════════════════════════════════
+    // GELATI
+    // Small $4.50 · Medium $5.00 · Large $6.50 · X-Large $10.00
+    // ══════════════════════════════════════════════════════════
+    'gelati_sm' => [
+        'name'        => 'Gelati — Small',
+        'description' => "Water ice layered with soft serve ice cream. Small size. Choose any water ice flavor + any ice cream flavor. Water Ice: $waterIceFlavors Ice Cream: $iceCreamFlavors",
+        'price'       => 450,
+        'image'       => 'gelati_blue.png',
         'category'    => 'Gelati',
+        'size'        => 'Small',
     ],
-    'gelati_sour'     => [
-        'name'        => 'Gelati - Sour rainbow',
-        'description' => 'Sour rainbow water ice swirled with creamy vanilla ice cream',
-        'price'       => 700,
-        'image'       => 'sourgelati.png',
+    'gelati_md' => [
+        'name'        => 'Gelati — Medium',
+        'description' => "Water ice layered with soft serve ice cream. Medium size. Choose any water ice flavor + any ice cream flavor. Water Ice: $waterIceFlavors Ice Cream: $iceCreamFlavors",
+        'price'       => 500,
+        'image'       => 'gelati_orange.png',
         'category'    => 'Gelati',
+        'size'        => 'Medium',
     ],
-    'gelati_orange'   => [
-        'name'        => 'Gelati — Mango',
-        'description' => 'Fresh Mango water ice layered with smooth vanilla soft serve',
-        'price'       => 700,
-        'image'       => 'mangogelati.png',
+    'gelati_lg' => [
+        'name'        => 'Gelati — Large',
+        'description' => "Water ice layered with soft serve ice cream. Large size. Choose any water ice flavor + any ice cream flavor. Water Ice: $waterIceFlavors Ice Cream: $iceCreamFlavors",
+        'price'       => 650,
+        'image'       => 'gelati_sour.png',
         'category'    => 'Gelati',
+        'size'        => 'Large',
+    ],
+    'gelati_xl' => [
+        'name'        => 'Gelati — X-Large',
+        'description' => "Water ice layered with soft serve ice cream. X-Large size. Choose any water ice flavor + any ice cream flavor. Water Ice: $waterIceFlavors Ice Cream: $iceCreamFlavors",
+        'price'       => 1000,
+        'image'       => 'gelati_blue.png',
+        'category'    => 'Gelati',
+        'size'        => 'X-Large',
     ],
 
-    // ── Unique Desserts / Milkshakes ───────────
-    'sundae_applepie' => [
-        'name'        => ' Cinnamon toast Sundae',
-        'description' => 'Vanilla ice cream topped with cinnamon toast crunch, & caramel drizzle',
-        'price'       => 950,
+    // ══════════════════════════════════════════════════════════
+    // SOFT SERVE ICE CREAM
+    // Small $4.00 · Medium $5.00 · Large $7.00
+    // ══════════════════════════════════════════════════════════
+    'softserve_sm' => [
+        'name'        => 'Soft Serve Ice Cream — Small',
+        'description' => "Creamy soft serve ice cream. Small size. $iceCreamFlavors",
+        'price'       => 400,
+        'image'       => 'sundae2.jpg',
+        'category'    => 'Ice Cream',
+        'size'        => 'Small',
+    ],
+    'softserve_md' => [
+        'name'        => 'Soft Serve Ice Cream — Medium',
+        'description' => "Creamy soft serve ice cream. Medium size. $iceCreamFlavors",
+        'price'       => 500,
+        'image'       => 'sundae2.jpg',
+        'category'    => 'Ice Cream',
+        'size'        => 'Medium',
+    ],
+    'softserve_lg' => [
+        'name'        => 'Soft Serve Ice Cream — Large',
+        'description' => "Creamy soft serve ice cream. Large size. $iceCreamFlavors",
+        'price'       => 700,
+        'image'       => 'sundae2.jpg',
+        'category'    => 'Ice Cream',
+        'size'        => 'Large',
+    ],
+
+    // ══════════════════════════════════════════════════════════
+    // HAND DIPPED ICE CREAM
+    // Small $4.00 · Medium $5.00 · Large $7.00
+    // ══════════════════════════════════════════════════════════
+    'handdipped_sm' => [
+        'name'        => 'Hand Dipped Ice Cream — Small',
+        'description' => "Hand scooped ice cream. Small size. $iceCreamFlavors",
+        'price'       => 400,
+        'image'       => 'sundae2.jpg',
+        'category'    => 'Ice Cream',
+        'size'        => 'Small',
+    ],
+    'handdipped_md' => [
+        'name'        => 'Hand Dipped Ice Cream — Medium',
+        'description' => "Hand scooped ice cream. Medium size. $iceCreamFlavors",
+        'price'       => 500,
+        'image'       => 'sundae2.jpg',
+        'category'    => 'Ice Cream',
+        'size'        => 'Medium',
+    ],
+    'handdipped_lg' => [
+        'name'        => 'Hand Dipped Ice Cream — Large',
+        'description' => "Hand scooped ice cream. Large size. $iceCreamFlavors",
+        'price'       => 700,
+        'image'       => 'sundae2.jpg',
+        'category'    => 'Ice Cream',
+        'size'        => 'Large',
+    ],
+
+    // ══════════════════════════════════════════════════════════
+    // CONES — 75¢ each
+    // Kids Cone · Large Cone · Sugar Cone
+    // Small Waffle Cone · Large Waffle Cone
+    // ══════════════════════════════════════════════════════════
+    'cone_kids' => [
+        'name'        => 'Cone — Kids',
+        'description' => 'Kids cone. Add to any ice cream order.',
+        'price'       => 75,
+        'image'       => 'sundae2.jpg',
+        'category'    => 'Cones',
+        'size'        => 'Kids',
+    ],
+    'cone_large' => [
+        'name'        => 'Cone — Large',
+        'description' => 'Large cone. Add to any ice cream order.',
+        'price'       => 75,
+        'image'       => 'sundae2.jpg',
+        'category'    => 'Cones',
+        'size'        => 'Large',
+    ],
+    'cone_sugar' => [
+        'name'        => 'Sugar Cone',
+        'description' => 'Classic sugar cone. Add to any ice cream order.',
+        'price'       => 75,
+        'image'       => 'sundae2.jpg',
+        'category'    => 'Cones',
+        'size'        => 'Regular',
+    ],
+    'cone_waffle_sm' => [
+        'name'        => 'Small Waffle Cone',
+        'description' => 'Small fresh-baked waffle cone. Add to any ice cream order.',
+        'price'       => 75,
+        'image'       => 'sundae2.jpg',
+        'category'    => 'Cones',
+        'size'        => 'Small',
+    ],
+    'cone_waffle_lg' => [
+        'name'        => 'Large Waffle Cone',
+        'description' => 'Large fresh-baked waffle cone. Add to any ice cream order.',
+        'price'       => 75,
+        'image'       => 'sundae2.jpg',
+        'category'    => 'Cones',
+        'size'        => 'Large',
+    ],
+
+    // ══════════════════════════════════════════════════════════
+    // THE ICEBOX FROZEN CUP — $5.00
+    // ══════════════════════════════════════════════════════════
+    'frozen_cup' => [
+        'name'        => 'The IceBox Frozen Cup',
+        'description' => "Vanilla ice cream blended with your choice of toppings. $5.00. $iceCreamFlavors",
+        'price'       => 500,
+        'image'       => 'sundae2.jpg',
+        'category'    => 'Ice Cream',
+        'size'        => 'One Size',
+    ],
+
+    // ══════════════════════════════════════════════════════════
+    // SIGNATURE SUNDAES
+    // ══════════════════════════════════════════════════════════
+    'sundae_brownie' => [
+        'name'        => 'Brownie Sundae',
+        'description' => 'Vanilla ice cream with hot fudge or caramel, whipped cream, topped with a cherry. $7.00',
+        'price'       => 700,
         'image'       => 'cintstsun.png',
-        'category'    => 'Unique Desserts',
+        'category'    => 'Signature Sundaes',
+        'size'        => 'One Size',
     ],
-    'dessert_waffle'  => [
+    'sundae_cookie' => [
+        'name'        => 'Cookie Sundae',
+        'description' => 'Vanilla ice cream drizzled with caramel and whipped cream. $6.00',
+        'price'       => 600,
+        'image'       => 'cintstsun.png',
+        'category'    => 'Signature Sundaes',
+        'size'        => 'One Size',
+    ],
+    'sundae_cinnamontoast' => [
+        'name'        => 'Cinnamon Toast Donut Sundae',
+        'description' => 'Vanilla ice cream topped with Cinnamon Toast Crunch, drizzled with caramel. $7.00',
+        'price'       => 700,
+        'image'       => 'cintstsun.png',
+        'category'    => 'Signature Sundaes',
+        'size'        => 'One Size',
+    ],
+    'sundae_fruitytooty' => [
+        'name'        => 'Fruity Tooty Donut Sundae',
+        'description' => 'Vanilla ice cream topped with Fruit Loops, drizzled with strawberry syrup. $7.00',
+        'price'       => 700,
+        'image'       => 'dessert_friedoreo.png',
+        'category'    => 'Signature Sundaes',
+        'size'        => 'One Size',
+    ],
+    'sundae_donut' => [
+        'name'        => 'Ice Cream Donut Sundae',
+        'description' => 'A fresh donut topped with scoops of ice cream and your choice of toppings. $7.00',
+        'price'       => 700,
+        'image'       => 'dessert_friedoreo.png',
+        'category'    => 'Signature Sundaes',
+        'size'        => 'One Size',
+    ],
+
+    // ══════════════════════════════════════════════════════════
+    // UNIQUE DESSERTS
+    // ══════════════════════════════════════════════════════════
+    'dessert_waffle' => [
         'name'        => 'Create Your Own Waffle',
-        'description' => 'A fresh waffle loaded with three scoops of ice cream(your choice), whipped cream, chocolate drizzle & toppings',
+        'description' => 'Fresh waffle loaded with three scoops of ice cream, whipped cream, chocolate drizzle & your choice of toppings.',
         'price'       => 1100,
         'image'       => 'wafflesun.png',
         'category'    => 'Unique Desserts',
+        'size'        => 'One Size',
     ],
     'dessert_friedoreo' => [
         'name'        => 'Fried Oreo Sundae',
-        'description' => 'Fried Oreos dusted with powdered sugar, topped with vanilla ice cream, whipped cream & chocolate drizzle',
+        'description' => 'Golden fried Oreos dusted with powdered sugar, topped with vanilla ice cream, whipped cream & chocolate drizzle.',
         'price'       => 1000,
         'image'       => 'oreosun.png',
         'category'    => 'Unique Desserts',
+        'size'        => 'One Size',
     ],
-    'dessert_crepe'   => [
+    'dessert_crepe' => [
         'name'        => 'Ice Cream Crepe',
-        'description' => 'Crispy crepe filled with three scoops of ice cream, strawberry drizzle & rainbow sprinkles',
+        'description' => 'Crispy crepe filled with three scoops of ice cream, strawberry drizzle, whipped cream & rainbow sprinkles.',
         'price'       => 1050,
         'image'       => 'icecrepe.jpeg',
         'category'    => 'Unique Desserts',
+        'size'        => 'One Size',
     ],
 
-    // ── Hot Food ───────────────────────────────
-    'hotfood_frieddough' => [
-        'name'        => 'Fried Oreos',
-        'description' => 'Boardwalk-style fried oroes dusted with powdered sugar, served with dipping sauce',
+    // ══════════════════════════════════════════════════════════
+    // MILKSHAKES
+    // Small $5.00 · Large $8.00
+    // Flavors: Chocolate · Vanilla · Strawberry · Oreo
+    // ══════════════════════════════════════════════════════════
+    'milkshake_sm' => [
+        'name'        => 'Milkshake — Small',
+        'description' => "Hand-spun milkshake. Small size. $milkshakeFlavors",
+        'price'       => 500,
+        'image'       => 'sundae2.jpg',
+        'category'    => 'Milkshakes',
+        'size'        => 'Small',
+    ],
+    'milkshake_lg' => [
+        'name'        => 'Milkshake — Large',
+        'description' => "Hand-spun milkshake. Large size. $milkshakeFlavors",
+        'price'       => 800,
+        'image'       => 'sundae2.jpg',
+        'category'    => 'Milkshakes',
+        'size'        => 'Large',
+    ],
+
+    // ══════════════════════════════════════════════════════════
+    // ICEBOX SNACKS
+    // ══════════════════════════════════════════════════════════
+    'snack_hotdog' => [
+        'name'        => 'Hot Dog',
+        'description' => 'Classic hot dog. $2.50',
+        'price'       => 250,
+        'image'       => 'fries.jpeg',
+        'category'    => 'Snacks',
+        'size'        => 'One Size',
+    ],
+    'snack_hotsausage' => [
+        'name'        => 'Hot Sausage',
+        'description' => 'Juicy hot sausage sandwich. $3.50',
+        'price'       => 350,
+        'image'       => 'fries.jpeg',
+        'category'    => 'Snacks',
+        'size'        => 'One Size',
+    ],
+    'snack_funnel' => [
+        'name'        => 'Funnel Cake Fries',
+        'description' => 'Crispy golden funnel cake fries dusted with powdered sugar. $6.00',
         'price'       => 600,
-        'image'       => 'friedoreo.png',
-        'category'    => 'Hot Food',
+        'image'       => 'hotfood_frieddough.png',
+        'category'    => 'Snacks',
+        'size'        => 'One Size',
     ],
-    'hotfood_pizza'   => [
-        'name'        => 'Turkey Pepperonni Pizza Pretzel',
-        'description' => 'Toasted Pretzel loaded with marinara, melted mozzarella & turkey pepperoni',
-        'price'       => 700,
-        'image'       => 'pizzapretzel.png',
-        'category'    => 'Hot Food',
+
+    // ══════════════════════════════════════════════════════════
+    // PRETZELS
+    // ══════════════════════════════════════════════════════════
+    'pretzel_plain' => [
+        'name'        => 'Plain Pretzel',
+        'description' => 'Classic soft baked plain pretzel. $1.50',
+        'price'       => 150,
+        'image'       => 'fries.jpeg',
+        'category'    => 'Pretzels',
+        'size'        => 'One Size',
     ],
+    'pretzel_cheese' => [
+        'name'        => 'Cheese Pretzel',
+        'description' => 'Soft pretzel topped with melted cheese. $2.00',
+        'price'       => 200,
+        'image'       => 'fries.jpeg',
+        'category'    => 'Pretzels',
+        'size'        => 'One Size',
+    ],
+    'pretzel_pizza' => [
+        'name'        => 'Pizza Pretzel',
+        'description' => 'Soft pretzel loaded with marinara sauce and mozzarella. $3.50',
+        'price'       => 350,
+        'image'       => 'hotfood_pizza.png',
+        'category'    => 'Pretzels',
+        'size'        => 'One Size',
+    ],
+    'pretzel_pepperoni' => [
+        'name'        => 'Beef Pepperoni Pizza',
+        'description' => 'Toasted bread with marinara, melted mozzarella & beef pepperoni. $4.00',
+        'price'       => 400,
+        'image'       => 'hotfood_pizza.png',
+        'category'    => 'Pretzels',
+        'size'        => 'One Size',
+    ],
+
+    // ══════════════════════════════════════════════════════════
+    // TOPPINGS — 75¢ each
+    // ══════════════════════════════════════════════════════════
+    'topping_rainbow'     => ['name' => 'Rainbow Sprinkles',     'description' => 'Add rainbow sprinkles. 75¢',           'price' => 75,  'image' => 'sundae2.jpg', 'category' => 'Toppings', 'size' => 'Add-on'],
+    'topping_chocsprink'  => ['name' => 'Chocolate Sprinkles',   'description' => 'Add chocolate sprinkles. 75¢',         'price' => 75,  'image' => 'sundae2.jpg', 'category' => 'Toppings', 'size' => 'Add-on'],
+    'topping_chocchips'   => ['name' => 'Chocolate Chips',       'description' => 'Add chocolate chips. 75¢',             'price' => 75,  'image' => 'sundae2.jpg', 'category' => 'Toppings', 'size' => 'Add-on'],
+    'topping_oreos'       => ['name' => 'Oreos',                 'description' => 'Add crushed Oreos. 75¢',               'price' => 75,  'image' => 'sundae2.jpg', 'category' => 'Toppings', 'size' => 'Add-on'],
+    'topping_reesecups'   => ['name' => 'Reese Cups',            'description' => 'Add Reese Cups. 75¢',                  'price' => 75,  'image' => 'sundae2.jpg', 'category' => 'Toppings', 'size' => 'Add-on'],
+    'topping_brownie'     => ['name' => 'Brownie Bites',         'description' => 'Add brownie bites. 75¢',               'price' => 75,  'image' => 'sundae2.jpg', 'category' => 'Toppings', 'size' => 'Add-on'],
+    'topping_gummies'     => ['name' => 'Gummy Bears',           'description' => 'Add gummy bears. 75¢',                 'price' => 75,  'image' => 'sundae2.jpg', 'category' => 'Toppings', 'size' => 'Add-on'],
+    'topping_sourworm'    => ['name' => 'Sour Worm',             'description' => 'Add sour worms. 75¢',                  'price' => 75,  'image' => 'sundae2.jpg', 'category' => 'Toppings', 'size' => 'Add-on'],
+    'topping_lemonheads'  => ['name' => 'Lemon Heads',           'description' => 'Add lemon heads. 75¢',                 'price' => 75,  'image' => 'sundae2.jpg', 'category' => 'Toppings', 'size' => 'Add-on'],
+    'topping_walnuts'     => ['name' => 'Crushed Walnuts',       'description' => 'Add crushed walnuts. 75¢',             'price' => 75,  'image' => 'sundae2.jpg', 'category' => 'Toppings', 'size' => 'Add-on'],
+    'topping_cinntoast'   => ['name' => 'Cinnamon Toast Crunch', 'description' => 'Add Cinnamon Toast Crunch. 75¢',       'price' => 75,  'image' => 'sundae2.jpg', 'category' => 'Toppings', 'size' => 'Add-on'],
+    'topping_fruitloops'  => ['name' => 'Fruit Loops',           'description' => 'Add Fruit Loops. 75¢',                 'price' => 75,  'image' => 'sundae2.jpg', 'category' => 'Toppings', 'size' => 'Add-on'],
+    'topping_strawsyrup'  => ['name' => 'Strawberry Syrup',      'description' => 'Add strawberry syrup drizzle. 75¢',    'price' => 75,  'image' => 'sundae2.jpg', 'category' => 'Toppings', 'size' => 'Add-on'],
+    'topping_chocsyrup'   => ['name' => 'Chocolate Syrup',       'description' => 'Add chocolate syrup drizzle. 75¢',     'price' => 75,  'image' => 'sundae2.jpg', 'category' => 'Toppings', 'size' => 'Add-on'],
+    'topping_caramel'     => ['name' => 'Caramel Syrup',         'description' => 'Add caramel syrup drizzle. 75¢',       'price' => 75,  'image' => 'sundae2.jpg', 'category' => 'Toppings', 'size' => 'Add-on'],
+    'topping_cherries'    => ['name' => 'Cherries',              'description' => 'Add cherries on top. 75¢',             'price' => 75,  'image' => 'sundae2.jpg', 'category' => 'Toppings', 'size' => 'Add-on'],
 ];
 
 // ─── Cart Helpers ─────────────────────────────────────────────
@@ -399,6 +704,70 @@ $view        = $_GET['view'] ?? 'shop'; // shop | cart | checkout
     .flash.success { background: rgba(255,255,255,0.25); color: white; }
     .flash.error   { background: rgba(220,50,50,0.3);   color: #ffe0e0; }
 
+    /* ── Category tabs ── */
+    .category-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .cat-tab {
+      font-family: "Ranchers", system-ui;
+      font-size: 0.95rem;
+      padding: 0.4em 1.1em;
+      border-radius: 2em;
+      background: rgba(255,255,255,0.15);
+      color: white;
+      text-decoration: none;
+      border: 1px solid rgba(255,255,255,0.3);
+      transition: background 0.2s;
+      white-space: nowrap;
+    }
+
+    .cat-tab:hover  { background: rgba(255,255,255,0.28); color: white; }
+    .cat-tab.active { background: white; color: var(--blue-dark); border-color: white; }
+
+    /* ── Cart sticky banner ── */
+    .cart-banner {
+      background: rgba(0,0,0,0.25);
+      color: white;
+      text-align: center;
+      padding: 0.75rem 1rem;
+      border-radius: var(--radius);
+      margin-bottom: 1.5rem;
+      font-family: "Ranchers", system-ui;
+      font-size: 1.05rem;
+      position: sticky;
+      top: 160px;
+      z-index: 50;
+    }
+
+    /* ── Category section heading ── */
+    .category-section { margin-bottom: 3rem; }
+
+    .category-heading {
+      font-family: "Ranchers", system-ui;
+      font-size: 1.8rem;
+      color: white;
+      border-bottom: 2px solid rgba(255,255,255,0.3);
+      padding-bottom: 0.4rem;
+      margin-bottom: 1.5rem;
+    }
+
+    /* ── Size badge ── */
+    .size-badge {
+      display: inline-block;
+      font-family: "Ranchers", system-ui;
+      font-size: 0.75rem;
+      background: var(--blue-dark);
+      color: white;
+      padding: 0.15em 0.7em;
+      border-radius: 2em;
+      margin-bottom: 0.4rem;
+    }
+
     /* ── Product grid ── */
     .product-grid {
       display: grid;
@@ -625,9 +994,7 @@ $view        = $_GET['view'] ?? 'shop'; // shop | cart | checkout
 
 <!-- ── Navigation ── -->
 <nav class="site-nav">
-  <a href="index.html" class="logo">
-    <img src="iceboxbg.jpg" alt="">
-  </a>
+  <a href="index.html" class="logo">🧊 The IceBox</a>
   <div class="nav-links">
     <a href="checkout.php?view=shop">Menu</a>
     <a href="checkout.php?view=cart" class="cart-badge">
@@ -684,6 +1051,10 @@ $view        = $_GET['view'] ?? 'shop'; // shop | cart | checkout
       <div class="form-group">
         <label>Phone (optional)</label>
         <input type="tel" class="form-input" id="customer-phone" placeholder="(215) 555-0100" autocomplete="tel">
+      </div>
+      <div class="form-group">
+        <label>Flavor &amp; Size Notes <span style="opacity:0.7; font-size:0.85rem;">(e.g. "Water Ice — Cherry, Gelati — Blue Raspberry + Vanilla")</span></label>
+        <textarea class="form-input" id="order-notes" rows="3" placeholder="List your flavor and size choices here for each item..." style="resize:vertical;"></textarea>
       </div>
     </div>
 
@@ -807,6 +1178,7 @@ async function handleSubmit(e) {
 
   const name  = document.getElementById('customer-name').value.trim();
   const email = document.getElementById('customer-email').value.trim();
+  const notes = document.getElementById('order-notes')?.value.trim() || '';
 
   if (!name || !email) {
     msg.textContent = 'Please fill in your name and email.';
@@ -914,34 +1286,86 @@ initStripe();
      SHOP / MENU
      ════════════════════════════════════ -->
 <h1>Order Online</h1>
+<p style="text-align:center; font-family:'Ranchers',system-ui; color:rgba(255,255,255,0.8); margin-bottom:1.5rem; font-size:1rem;">
+  Note your flavor &amp; size in the Order Notes at checkout.
+</p>
 
 <?php if ($message): ?>
   <div class="flash success"><?= htmlspecialchars($message) ?></div>
 <?php endif; ?>
 
-<div class="product-grid">
-  <?php foreach ($products as $id => $p): ?>
-  <div class="product-card">
-    <img src="<?= htmlspecialchars($p['image']) ?>"
-         alt="<?= htmlspecialchars($p['name']) ?>"
-         onerror="this.src='https://placehold.co/400x180/00B4DB/white?text=IceBox'">
-    <div class="card-body">
-      <h3><?= htmlspecialchars($p['name']) ?></h3>
-      <p><?= htmlspecialchars($p['description']) ?></p>
-      <div class="product-price"><?= formatPrice($p['price']) ?></div>
-      <form method="POST" action="checkout.php?view=shop" class="add-form">
-        <input type="hidden" name="action" value="add">
-        <input type="hidden" name="product_id" value="<?= htmlspecialchars($id) ?>">
-        <input type="number" name="qty" value="1" min="1" max="99" class="qty-input">
-        <button type="submit" class="btn btn-primary">Add to cart</button>
-      </form>
-    </div>
-  </div>
+<?php
+$categories    = ['All'];
+$activeCategory = $_GET['cat'] ?? 'All';
+foreach ($products as $p) {
+    if (!in_array($p['category'], $categories)) {
+        $categories[] = $p['category'];
+    }
+}
+?>
+
+<!-- Category tabs -->
+<div class="category-tabs">
+  <?php foreach ($categories as $cat): ?>
+    <a href="checkout.php?view=shop&cat=<?= urlencode($cat) ?>"
+       class="cat-tab <?= $activeCategory === $cat ? 'active' : '' ?>">
+      <?= htmlspecialchars($cat) ?>
+    </a>
   <?php endforeach; ?>
 </div>
 
+<!-- Sticky cart banner -->
 <?php if ($cartCount > 0): ?>
-<div style="text-align:center; margin-top: 3rem;">
+<div class="cart-banner">
+  🛒 <?= $cartCount ?> item<?= $cartCount !== 1 ? 's' : '' ?> in cart — <?= formatPrice($cartTotal) ?>
+  &nbsp;·&nbsp;
+  <a href="checkout.php?view=cart" style="color:white; text-decoration:underline;">View Cart →</a>
+</div>
+<?php endif; ?>
+
+<?php
+// Group by category
+$grouped = [];
+foreach ($products as $id => $p) {
+    $grouped[$p['category']][$id] = $p;
+}
+?>
+
+<?php foreach ($grouped as $catName => $items): ?>
+  <?php if ($activeCategory !== 'All' && $activeCategory !== $catName) continue; ?>
+  <div class="category-section">
+    <h2 class="category-heading"><?= htmlspecialchars($catName) ?></h2>
+    <div class="product-grid">
+      <?php foreach ($items as $id => $p): ?>
+      <div class="product-card">
+        <img src="<?= htmlspecialchars($p['image']) ?>"
+             alt="<?= htmlspecialchars($p['name']) ?>"
+             onerror="this.src='https://placehold.co/400x180/00B4DB/white?text=IceBox'">
+        <div class="card-body">
+          <!-- Size badge -->
+          <?php if (!empty($p['size']) && $p['size'] !== 'One Size' && $p['size'] !== 'Add-on'): ?>
+          <span class="size-badge"><?= htmlspecialchars($p['size']) ?></span>
+          <?php endif; ?>
+
+          <h3><?= htmlspecialchars($p['name']) ?></h3>
+          <p><?= htmlspecialchars($p['description']) ?></p>
+          <div class="product-price"><?= formatPrice($p['price']) ?></div>
+
+          <form method="POST" action="checkout.php?view=shop&cat=<?= urlencode($activeCategory) ?>" class="add-form">
+            <input type="hidden" name="action" value="add">
+            <input type="hidden" name="product_id" value="<?= htmlspecialchars($id) ?>">
+            <input type="number" name="qty" value="1" min="1" max="99" class="qty-input">
+            <button type="submit" class="btn btn-primary">Add to cart</button>
+          </form>
+        </div>
+      </div>
+      <?php endforeach; ?>
+    </div>
+  </div>
+<?php endforeach; ?>
+
+<?php if ($cartCount > 0): ?>
+<div style="text-align:center; margin-top:3rem;">
   <a href="checkout.php?view=cart" class="btn btn-success" style="display:inline-block; width:auto;">
     View cart (<?= $cartCount ?> item<?= $cartCount !== 1 ? 's' : '' ?>) — <?= formatPrice($cartTotal) ?> →
   </a>
