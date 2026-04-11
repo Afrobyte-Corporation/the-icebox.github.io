@@ -26,12 +26,7 @@ require_once __DIR__ . '/vendor/autoload.php';
 
 // Load environment variables (use vlucas/phpdotenv or set directly)
 // If you don't have phpdotenv, replace these with your actual keys:
-$stripeSecretKey      = getenv('STRIPE_SECRET_KEY')      ?: 'sk_test_YOUR_SECRET_KEY';
-$stripePublishableKey = getenv('STRIPE_PUBLISHABLE_KEY') ?: 'pk_test_YOUR_PUBLISHABLE_KEY';
-$stripeWebhookSecret  = getenv('STRIPE_WEBHOOK_SECRET')  ?: 'whsec_YOUR_WEBHOOK_SECRET';
-
-\Stripe\Stripe::setApiKey($stripeSecretKey);
-
+//
 // ─── Products ─────────────────────────────────────────────────
 // In a real app, load these from a database.
 // Prices are in cents (USD): $3.50 = 350
