@@ -153,7 +153,7 @@ main {
   flex-direction: column;
   border-radius: 1em;
   overflow: hidden;
-  background-color: wheat;
+  background-color: rgb(220, 148, 15);
   text-align: center;
 
   /* Smooth hover lift */
